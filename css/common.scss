@@ -24,7 +24,7 @@
   }
 }
 .header {
-  height: 100px; 
+  height: 90px; 
   display: flex;
   align-items: center; 
   .header-wrap {
@@ -43,7 +43,7 @@
       display: flex;
       gap: 50px;
       font-weight: 500;
-      font-size: 25px;
+      font-size: 19px;
       color: $gray_txt_3;
 
       li {
@@ -58,7 +58,7 @@
     }
     .join-menu {
       font-weight: 500;
-      font-size: 20px;
+      font-size: 14px;
       color: $gray_txt_1;
       cursor: pointer;
     }

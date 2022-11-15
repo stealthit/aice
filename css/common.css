@@ -36,7 +36,7 @@
 }
 
 .header {
-  height: 100px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +71,7 @@
   display: flex;
   gap: 50px;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 19px;
   color: #464646;
 }
 
@@ -91,7 +91,7 @@
 
 .header .header-wrap .join-menu {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   color: #C1C1C1;
   cursor: pointer;
 }
