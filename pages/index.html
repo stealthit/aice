@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AICE</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="quick-menu">
+      <ul>
+        <li>정기시험오리엔테이션</li>
+        <li>정기시험사전점검</li>
+        <li>FAQ</li>
+        <li>TOP</li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="header-wrap">
+        <div class="logo"></div>
+        <ul class="gnb">
+          <li>AICE 소개</li>
+          <li>시험신청/응시</li>
+          <li>AI 교육</li>
+          <li>AIDU 실습</li>
+          <li>고객지원</li>
+        </ul>
+        <div class="join-menu">회원가입/로그인</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="intro">        
+        <div class="catg-cont-wrap">
+          <div class="catg-content active" id="catg01">
+            <div class="catg-desc">
+              <div class="catg-title">AICE Ready</div>
+              <div class="catg-txt1">AICE 자격인증 시험준비에 꼭 필요한 <br>
+                핵심내용만 담았습니다!</div>
+              <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
+                AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+              <button class="btn-more">더보기</button>
+            </div>
+            <img src="../images/intro1.png" alt="">
+          </div>
+          <div class="catg-content" id="catg02">
+            <div class="catg-desc">
+              <div class="catg-title">AI 사례실습</div>
+              <div class="catg-txt1">AICE 자격인증 시험준비에 꼭 필요한 <br>
+                인공지능(AI) 교육의 전문화를 위한 도전은 사례를 통해<br>
+                실습위주의 공부를 할 수 있습니다.
+              </div>    
+              <!-- <div class="catg-txt2"></div>           -->
+              <button class="btn-more">더보기</button>
+            </div>
+            <img src="../images/intro2.png" alt="">
+          </div>
+          <div class="catg-content" id="catg03">
+            <div class="catg-desc">
+              <div class="catg-title">Data Science</div>
+              <div class="catg-txt1">다양한 데이터로부터 지식과 인사이트를 추출하는데<br>
+                필요한 융합분야를 배웁니다.</div>
+              <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
+                AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+              <button class="btn-more">더보기</button>
+            </div>
+            <img src="../images/intro3.png" alt="">
+          </div>
+          <div class="catg-content" id="catg04">
+            <div class="catg-desc">
+              <div class="catg-title">AI Insight</div>
+              <div class="catg-txt1">인공지능과 우리가 협업하고 공존하는 사회를 준비하는<br>
+                모든 수업이 있습니다.</div>
+              <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로<br> 
+                AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+              <button class="btn-more">더보기</button>
+            </div>
+            <img src="../images/intro4.png" alt="">
+          </div>
+          <div class="catg-content" id="catg05">
+            <div class="catg-desc">
+              <div class="catg-title">AI VOD교육팩</div>
+              <div class="catg-txt1">인공지능과 친해질 수 있는 과목을 하나의 패키지로<br>
+                수강할 수 있습니다.</div>
+              <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
+                AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+              <button class="btn-more">더보기</button>
+            </div>
+            <img src="../images/intro5.png" alt="">
+          </div>
+        </div>
+        <div class="catg-menu-wrap">
+          <ul class="catg-menu">
+            <li class="active" data-tab="catg01">AICE Ready</li>
+            <li data-tab="catg02">AI 사례 실습</li>
+            <li data-tab="catg03">Data Science</li>
+            <li data-tab="catg04">AI Insight</li>
+            <li data-tab="catg05">AI VOD 교육팩</li>
+          </ul>
+        </div>
+      </div>           
+      <div class="search-wrap">
+        <div class="search-box">
+          <input type="text" name="" id="" placeholder="원하는 강의를 찾아보세요.">
+          <div class="ic-search"></div>
+        </div>
+        <div class="search-word">
+          <div class="word-item">javascript</div>
+          <div class="word-item">react</div>
+          <div class="word-item">node js</div>
+          <div class="word-item">exeress</div>
+          <div class="word-item">exeress</div>
+        </div>
+      </div>
+      <div class="section1 section">
+        <div class="section-title">이달의 베스트 강의 TOP 10</div>
+        <div class="swiper-button-prev swiper-button-prev1"></div><!-- 이전 버튼 -->       
+        <div class="swiper-button-next swiper-button-next1"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-box">
+                <div class="l-point">#AI 기초 # AI원리 #AI용어</div>
+                <div class="l-title">AI 이해</div>
+                <div class="l-desc">AI에서 다루는 기초 용어 및 원리<br>
+                  업무 적용 사례 등을 학습합니다.</div>
+              </div>
+              <div class="desc-box">
+                <div class="title">[AICE Basic] 1. AI 이해 </div>
+                <ul class="count-line">
+                  <li><img class="ic-person" alt="">300</li>
+                  <li><img class="ic-heart" alt="">598</li>
+                  <li><img class="ic-comment" alt="">202</li>
+                </ul>
+                <div class="type-wrap">
+                  <div class="btn-type bg-green">Basic</div>
+                  <div class="btn-type type2">No 코딩</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <div class="l-point">#딥러닝 # 딥러닝기초</div>
+                <div class="l-title">딥러닝의 동작 원리</div>
+                <div class="l-desc">딥러닝의 기본 동작 원리와 구조<br>
+                  개념을 학습합니다.</div>
+              </div>
+              <div class="desc-box">
+                <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리 basic</div>
+                <ul class="count-line">
+                  <li><img class="ic-person" alt="">3030</li>
+                  <li><img class="ic-heart" alt="">598</li>
+                  <li><img class="ic-comment" alt="">202</li>
+                </ul>
+                <div class="type-wrap">
+                  <div class="btn-type bg-blue">Associate</div>
+                  <div class="btn-type type2">Python</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <div class="l-point">#AI 기초 # 공부 #노하우</div>
+                <div class="l-title">공부 잘하는 노하우</div>
+                <div class="l-desc">AI를 배워야 하는 이유와 <br>
+                  데이터의 중요성, AI를 더 잘하기 위한<br>
+                  노하우들을 학습합니다.</div>
+              </div>
+              <div class="desc-box">
+                <div class="title">[AICE Basic] 6. AI 공부 잘하는 노하우</div>
+                <ul class="count-line">
+                  <li><img class="ic-person" alt="">3030</li>
+                  <li><img class="ic-heart" alt="">598</li>
+                  <li><img class="ic-comment" alt="">202</li>
+                </ul>
+                <div class="type-wrap">
+                  <div class="btn-type bg-purple">Professional</div>
+                  <div class="btn-type type2">Python</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img-box">
+                <div class="l-point">#AI 기초 # AI원리 #AI용어</div>
+                <div class="l-title">AI 이해</div>
+                <div class="l-desc">AI에서 다루는 기초 용어 및 원리<br>
+                  업무 적용 사례 등을 학습합니다.</div>
+              </div>
+              <div class="desc-box">
+                <div class="title">[AICE Basic] 1. AI 이해 </div>
+                <ul class="count-line">
+                  <li><img class="ic-person" alt="">300</li>
+                  <li><img class="ic-heart" alt="">598</li>
+                  <li><img class="ic-comment" alt="">202</li>
+                </ul>
+                <div class="type-wrap">
+                  <div class="btn-type bg-green">Basic</div>
+                  <div class="btn-type type2">No 코딩</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="section2">
+        <div class="banner-wrap">
+          <div class="banner-txt">
+            <div class="banner-title">AI 활용 핵심을 짚어주는 교육, AICE Ready</div>
+            <div class="banner-desc">기존 수강생들의 학습 데이터를 기반으로 가장 효과적인 AI 학습가이드를 제안합니다</div>
+            <div class="banner-shortcut">바로가기<img src="../images/shortcut_arrow.png" alt=""></div>
+          </div>
+          <img src="../images/banner.png" alt="">
+        </div>
+      </div>
+      <div class="section3 section">
+        <div class="section-content">
+          <div class="cont-top">
+            <div class="section-title">AICE Ready</div>
+            <div class="btn-more">더보기<div class="ic-more"></div></div>
+          </div>
+          <div class="swiper-button-prev swiper-button-prev2"></div><!-- 이전 버튼 -->       
+          <div class="swiper-button-next swiper-button-next2"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 1. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-blue">Associate</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-purple">Professional</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 5. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="cont-top">
+            <div class="section-title">AICE 사례 실습</div>
+            <div class="btn-more">더보기<div class="ic-more"></div></div>
+          </div>
+          <div class="swiper-button-prev swiper-button-prev3"></div><!-- 이전 버튼 -->       
+          <div class="swiper-button-next swiper-button-next3"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 1. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-red">Junior</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-purple">Professional</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 5. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="cont-top">
+            <div class="section-title">Data Science</div>
+            <div class="btn-more">더보기<div class="ic-more"></div></div>
+          </div>
+          <div class="swiper-button-prev swiper-button-prev4"></div><!-- 이전 버튼 -->       
+          <div class="swiper-button-next swiper-button-next4"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 1. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-red">Junior</div>
+                    <div class="btn-type type2">Python</div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-purple">Professional</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 5. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="cont-top">
+            <div class="section-title">AI Insight</div>
+            <div class="btn-more">더보기<div class="ic-more"></div></div>
+          </div>
+          <div class="swiper-button-prev swiper-button-prev5"></div><!-- 이전 버튼 -->       
+          <div class="swiper-button-next swiper-button-next5"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper mySwiper5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 1. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-purple">Professional</div>
+                    <div class="btn-type type2">Python</div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-blue">Associate</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-yel cl-gray3">Future</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 5. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="cont-top">
+            <div class="section-title">AI VOD교육팩</div>
+            <div class="btn-more">더보기<div class="ic-more"></div></div>
+          </div>
+          <div class="swiper-button-prev swiper-button-prev6"></div><!-- 이전 버튼 -->       
+          <div class="swiper-button-next swiper-button-next6"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper mySwiper6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 1. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-yel cl-gray3">Future</div>
+                    <div class="btn-type type2">No 코딩</div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-purple">Professional</div>
+                    <div class="btn-type type2">Python</div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">3030</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-blue">Associate</div>
+                    <div class="btn-type type2">Python</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box"></div>
+                <div class="desc-box">
+                  <div class="title">[AICE Basic] 5. AI 이해 </div>
+                  <ul class="count-line">
+                    <li><img class="ic-person" alt="">300</li>
+                    <li><img class="ic-heart" alt="">598</li>
+                    <li><img class="ic-comment" alt="">202</li>
+                  </ul>
+                  <div class="type-wrap">
+                    <div class="btn-type bg-green">Basic</div>
+                    <div class="btn-type type2">No 코딩</div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">      
+        <div class="banner">
+          <div class="footer-logo"></div>
+          <div class="footer-img"></div>
+        </div>
+        <div class="menu-wrap">
+          <ul class="f-menu">
+            <li>AIDU 이용약관</li>
+            <li>|</li>
+            <li>개인정보 처리방침</li>
+            <li>|</li>
+            <li>AICE 자격인증 이용약관</li>
+          </ul>
+        </div>
+        <div class="info">
+          <div class="info-list">
+            ㈜케이티 대표이사 구현모 경기도 성남시 분당구 불정로 90 (정자동) 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048<br>
+            AICE 상담센터 (대표번호) 1588-6301 (이메일) help@aice.study<br>
+            Copyright    kt corp. All rights reserved.
+          </div>
+          <div class="kt-logo"></div>
+        </div>      
+    </div>    
+  </div>
+  <script src="../scripts/jquery-3.6.0.min.js"></script>
+  <script src="../scripts/jquery-ui.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+  <script src="../scripts/swiper.min.js"></script>
+  <script>
+    $(".catg-menu li").on("mouseover",function () {
+    const tabId = $(this).attr("data-tab"); 
+    
+    $("#" + tabId).addClass("active").siblings().removeClass('active');
+    })
+
+    // swiper
+    var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 3,
+        spaceBetween: 63,
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next1', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev1', // 이번 버튼 클래스명
+        },  
+      }); 
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next2', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev2', // 이번 버튼 클래스명
+        },  
+      });   
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next3', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev3', // 이번 버튼 클래스명
+        },  
+      });   
+      var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next4', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev4', // 이번 버튼 클래스명
+        },  
+      });   
+      var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next5', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev5', // 이번 버튼 클래스명
+        },  
+      });   
+      var swiper = new Swiper(".mySwiper6", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next6', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev6', // 이번 버튼 클래스명
+        },  
+      });   
+  </script>
+</body>
+</html>

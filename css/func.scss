@@ -1,0 +1,27 @@
+$main-width: 1400px;
+// color
+$cl_pri: #003594;
+$cl_pri_2: #0076FF;
+$cl_pri_3: #667D85;
+$cl_sec: #FF4A62;
+$cl_green: #70AD47;
+$cl_blue: #00B0F0;
+$cl_purple: #7030A0;
+$cl_red: #F30404;
+$cl_yel: #FFFF00;
+
+$white: #fff;
+$gray_bg: #f3f3f3;
+$gray_bd: #DDDDDD;
+$gray_txt_1: #C1C1C1;
+$gray_txt_2: #9B9C9D;
+$gray_txt_3: #464646;
+
+
+@mixin set-images($name,$cnt) {
+  @for $i from 1 to $cnt+1{
+    &:nth-child(#{$i}) .img-box {
+      background: url(../images/img_#{$name}#{$i}.png);
+    }
+  }
+}
