@@ -1,0 +1,115 @@
+
+
+/* Search Toggle Button */
+.btn.toggleSearchBtn {display: inline-block;padding: 0px;line-height: 52px;font-weight: 500;font-size: 18px;color: #0c323d; border:none; background: #f3f3f3;}
+.btn.toggleSearchBtn + .btn.toggleSearchBtn {margin-left: 10px;}
+.btn.toggleSearchBtn span {display: inline-block;padding: 0 30px;line-height: 52px;border: 1px solid #dddddd; border-radius:3px;}
+.btn.toggleSearchBtn input:checked ~ span,
+.btn.toggleSearchBtn:hover span {color: #ffffff;background: #397fd4;border-color: #397fd4;}
+.btn.toggleSearchBtn input {width: 0px;height: 0px;overflow: hidden; visibility: hidden; opacity: 0;}
+
+.layerModal.payModal {width: 422px; padding: 30px 50px;}
+.layerModal.cancelModal {width: 422px; padding: 30px 50px;}
+/* charBox */
+.chartBox {border: 1px solid #dddddd;}
+.btnArea .amountTxt {line-height: 50px;vertical-align: top;}
+.rowBoxBtnArea button + button {margin-left: 5px;}
+
+/* 마이페이지 */
+/* type06 */
+.tabWrap.type06 .tabHeader { padding-bottom:40px; border-bottom: 1px solid #ddd;}
+.tabWrap.type06 .tabHeader ul { justify-content: center; column-gap:10px;}
+.tabWrap.type06 .tabHeader ul li button {width: 100%; padding:10px 30px; font-size: 17px; color: #667d85; border-radius:3px; border: 1px solid #dddddd;background: #f3f3f3;}
+.tabWrap.type06 .tabHeader ul li.active button {border-color:#397FD4; background: #397FD4; color: #fff;}
+
+.tabContainer .formBox { width:510px; margin:40px auto 0; }
+.tabContainer .formBox .btnArea { margin-top:40px;}
+.formBox .btnArea.full > button { width:100%; margin:0;}
+.formBox ul { padding-left: 0;}
+.formBox ul li + li { margin-top:10px;}
+.formBox .inpGroup input:not(:first-child).short { width:190px; margin-left: 10px;}
+.formBox .linkGroup { display: flex; justify-content: center; gap:25px; margin-top:40px;}
+.formBox .linkGroup .link { position:relative;}
+.formBox .linkGroup .link + .link::before { position:absolute; width:1px; height:12px; top:50%; left:-13px; margin-top:-6px; content: ''; display:block; background:#D1D8DA; }
+.formBox .linkGroup .link > * {color:#687F87; font-size:15px;}
+.formBox .linkGroup + .btnArea { margin-top:20px;}
+.tabContainer .selGroup { display: inline-flex; gap:12px; margin-left: auto; }
+.selGroup select.inp { min-width:200px; padding-left:20px; border-radius: 20px;}
+
+.payList .payBox {max-width:800px; margin:0 auto; padding:30px; border:1px solid #ddd;}
+.payList .payBox .tit { padding-bottom:25px; margin-bottom:30px; display:flex; align-items: center; gap:18px; border-bottom:1px dashed #ddd;}
+.payList .payBox .tit p { margin-bottom: 0; font-size:18px;}
+.payList .payBox .tit .pay { margin-left: auto; font-size:25px;}
+.payList .payBox .tit .pay em { margin-left:15px; font-weight:700;}
+.payList .payBox .con { justify-content: space-between; flex-wrap: wrap; row-gap:8px;}
+.payList .payBox .con dl { width:48%; display: inline-flex; align-items:center; gap:8px; }
+.payList .payBox .con dl:nth-child(2n) { justify-content: right;}
+.payList .payBox .con dl dt { width:68px; padding:2px 0; font-size:16px; color:#667d85; text-align:left; flex: 0 0 68px; }
+.payList .payBox .con dl dd { max-width:calc(100% - 76px); font-size:18px; font-weight:700; white-space:nowrap; overflow: hidden; text-overflow: ellipsis;}
+.payList .payBox .btnArea {margin-top:30px;}
+.payList .payBox .btnArea button + button { margin-left: 10px;}
+.payList .payBox + .payBox { margin-top:20px;}
+
+.myBox .badgeWrap { min-width:80px; text-align: center;}
+.myBox .applyListWrap ul li::before { display: none; background:none; }
+.myBox .applyListWrap ul li .contentBox { margin-right: auto; flex:1 1 0; width:auto; max-width:calc(100% - 468px);}
+.myBox .applyListWrap ul li .btnArea button { width: auto;}
+.myBox .applyListWrap ul li .btnArea button + button { margin-left:10px;}
+.myBox .applyListWrap ul li .state { width: 100px; font-size: 20px; text-align: left; }
+
+/* popup */
+.layerModal .modalFooter .btnArea.short button { width:160px;}
+.modalCnt .payBox { padding:20px; border:1px solid #ddd; }
+.modalCnt .payBox dl { display: grid; grid-template-columns:minmax(55px, auto) 1fr; grid-gap:10px;}
+.modalCnt .payBox dl dt{ font-size:16px; color:#667d85; text-align: left;}
+.modalCnt .payBox dl dd { font-size:20px; text-align: right;}
+.modalCnt .payBox dl dd.text01 { font-size:17px; color:#000000; font-weight: 500; text-align: left; padding-left: 30px;}
+.modalCnt .payBox dl.total { margin-top:20px; padding-top: 20px; border-top:1px solid #ddd;}
+.modalCnt .score { padding:20px; border:1px solid #ddd; }
+.modalCnt .score dl { display: grid; grid-template-columns:minmax(55px, auto) 1fr; grid-gap:10px;}
+.modalCnt .score dl dt{ font-size:16px; color:#667d85; text-align: left;}
+.modalCnt .score dl dd { font-size:18px; text-align: right;}
+.modalCnt .score dl dd span.text01 { font-size:22px; color:#397FD4; font-weight: 600; text-align: left; padding-left: 30px;}
+.modalCnt .score .subTitle { margin-bottom: 20px; padding-bottom: 20px; border-bottom:1px solid #ddd; }
+.modalCnt .score .subTitle .txtTit { font-size:18px; font-weight: 600; }
+.modalCnt .score dl.total { margin-top:20px; padding-top: 20px; border-top:1px solid #ddd;}
+.modalCnt .score dl.total dd { font-size:18px; font-weight: 600; }
+.modalCnt .score.gap01 { margin-bottom: 15px;}
+.modalCnt .certi .tit {padding:20px; background:#0A3F82;}
+.modalCnt .certi .tit .txtTit { font-size:20px; color:#fff;}
+.modalCnt .certi .con { padding:30px 20px; border: 1px solid #ddd; border-top:none;}
+.modalCnt .certi .con .prof .hidden { position:absolute; width:0; height:0; visibility:hidden; overflow:hidden; opacity:0;}
+.modalCnt .certi .con .prof dd:first-of-type { font-size:22px; color:#0C323D;}
+.modalCnt .certi .con dl + dl { margin-top:40px;}
+.modalCnt .certi .con dt {font-size:18px;}
+.modalCnt .certi .con dd {padding:0 10px; font-size:16px; color:#667d85;}
+.modalCnt .certi .con dd:first-of-type { padding:0; font-size:25px; font-weight:700; color:#2CBBB7;}
+.modalCnt .certi .signWrap {margin-top:35px; padding-top:35px; border-top:1px solid #ddd;}
+.modalCnt .certi .signWrap p.blackTxt, .certi .signWrap p.date { margin-bottom:8px;font-size:15px;}
+.modalCnt .certi .signWrap p.date { font-weight:600;}
+.modalCnt .certi .signWrap .sign { margin-top:15px; display: flex; justify-content: space-around; gap: 80px;}
+.modalCnt .certi .signWrap .sign span {width:160px; height:80px; display:block;}
+.modalCnt .certi .signWrap .sign span > img { width:100%; height:100%; object-fit: contain;}
+.modalCnt .certi .infoTxt01 { font-size: 12px; margin-top:20px; color:#667d85; text-align: center; line-height:1.4;}
+.modalCnt .txt_info { padding-bottom: 10px; text-align: left; color: #666; font-size: 16px; }
+.modalCnt .payList {width:322px; border:1px solid #ddd;}
+.modalCnt .payList iframe { display: block;}
+.modalFooter .btnArea .txt_sum { font-size: 22px; }
+
+.txt_note { margin-top:20px; padding-left: 0; }
+.txt_note li { text-align: left; color: #666;}
+.txt_note li + li { margin-top:4px;}
+.txt_note li.bar { position:relative; padding-left:12px;}
+.txt_note li.bar::before { position:absolute; top: 0; left:0; content: '-';}
+.repay *:first-child ~ .inp { margin-top:12px;}
+
+/* common */
+.t_blue { color:#397FD4;}
+.t_mint { color:#2CBBB7;}
+.t_red {color:#EB1F1F;}
+.badge {display:inline-block; padding:0 15px; line-height:34px; font-size:15px; border-radius:0.25rem;}
+.badge.gray { background:#efefef; color:#667d85;}
+.badge.mint { background:#ebf5f4; color:#3dae92; }
+.noCont { margin:0; padding:100px; font-size:22px; color:#0C323D; text-align: center;}
+
+

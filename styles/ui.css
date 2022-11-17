@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@import url("reset.css");
+@import url("common.css");
+@import url("style_01.css");
+
+/* point color */
+.pColor01{color:#397fd4 !important;}
+.pColor02{color: #667d85 !important;}
+.pColor03{color: #2cbbb7 !important;}
+.pColor04{color: #0c323d !important;}
+.pColor05{color: #3579cf !important;}
+.pColor06{color: #0a3f82 !important;}
+.pColor07{color: #68a8f5 !important;}
+
+/* grid */
+.grid2 {display: flex;width: 100%;align-items: center;justify-content: space-between;}
+.grid2 > .gridBox {flex: 0 0 49%;width: 49%;}
+.grid2 > .gridBox + .gridBox {margin-left: 2%;}
+
+.grid3 {display: flex;width: 100%;align-items: center;justify-content: space-between;}
+.grid3 > .gridBox {flex: 0 0 32%;width: 32%;}
+.grid3 > .gridBox + .gridBox {margin-left: 2%;}
+
+.grid4 {display: flex;width: 100%;align-items: center;justify-content: space-between;}
+.grid4 > .gridBox {flex: 0 0 23.5%;width: 23.5%;}
+.grid4 > .gridBox + .gridBox {margin-left: 2%;}
+
+.grid5 {display: flex;width: 100%;align-items: center;justify-content: space-between;}
+.grid5 > .gridBox {flex: 0 0 18.4%;width: 18.4%;}
+.grid5 > .gridBox + .gridBox {margin-left: 2%;}
+
+/* btnArea */
+.bottomBtnWrap button + button {margin-left: 10px;}
+.btnArea.type02 button + button {margin-left: 5px;}
+
+/* row title */
+.titArea{display:flex; justify-content:space-between; align-items:center; min-height:36px;}
+.titArea .tit{font-size:24px; color:#0c323d;}
+.titArea .tit.m {font-size: 26px; font-weight: 600;}
+.titArea .tit.l {font-size: 30px; font-weight: 600;}
+.titArea .tit > em{margin-left:20px; font-size:15px; color:#9cacb1;}
+.titArea .tit.l > em {font-size: 18px; font-weight: 500;}
+.titArea p {margin: 0;padding: 0;}	
+
+.titArea .titAreaPlusCon {display: flex;justify-content: space-between;}
+.titArea .titAreaPlusCon h2 {line-height: 50px;}
+
+.titArea.type01 {display: block;text-align: center;padding: 60px 0 30px;}	
+.titArea.type01 .tit {line-height: 58px;font-size: 40px;padding-bottom: 10px; font-weight: 600;}	
+.titArea.type01 .subTit {margin-bottom: 0px; line-height: 42px; font-size: 22px;color: #9cacb1;}
+
+.titArea.type02 {display: block;margin-bottom: 60px;text-align: left;}
+.titArea.type02 p {margin-top: 8px;margin-bottom: 0;font-size: 15px;line-height: 16px;color: #667d85;}
+.titArea.type02 p.user {position: relative;padding-left: 20px;}
+.titArea.type02 p.user::before {content: '';position: absolute;top: 0px;left: 0px;display: inline-block;width: 13px;height: 15px;background: url(../assets/images/ico_user.png) no-repeat;background-size: 14px auto;background-position-x: -1px;}
+
+.titArea.type03 {display: block;padding: 70px 0px 55px;}
+.titArea.type03 .tit {padding-bottom: 25px;line-height: 40px;font-size: 40px;font-weight: 600;color: #0c323d;}
+.titArea.type03 p {line-height: 26px; font-size: 18px; color: #9cacb1;}
+
+/* contents 바로 상단*/
+.titArea + .tpArea{margin-top:20px;}
+.tpArea{display:flex; justify-content:space-between; align-items:center; min-height:24px;}
+.tpArea .tit{font-size:15px; color:#667d85;}
+.tpArea em {font-size: 18px;color: #397fd4;font-weight: 600;}
+
+/* layer 관련  */
+.layerModalWrap .listTable thead th{height:50px; font-size:15px; padding:5px;}
+.layerModalWrap .listTable tbody tr > *{height:39px; font-size:14px;}
+.layerModalWrap.rowFull .modalHeader .searchArea{width:415px;}
+.layerModalWrap .searchArea{padding:0;}
+.layerModalWrap.rowFull .modalHeader .searchArea{width:415px;}
+
+/* input 관련 */
+.unitGroup{overflow:hidden;}
+.unitGroup .unit{text-align:left;}
+.unitGroup .unit + .unit{margin-top:30px;}
+.unitGroup .unit dt{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;}
+.unitGroup .unit dt .tit{font-size:17px; color:#0c323d; font-weight:500;}
+.unitGroup .unit dt .inpGroup {justify-content: flex-end;}
+.unitGroup .unit dt .inpGroup .tit {margin-right: 20px;}
+.unitGroup .unit dt .listTable {flex: 0 0 100%; width: 100%;}
+.unitGroup .unit dt.flexStart {justify-content: flex-start !important;}
+.unitGroup .unit dt .tit + input {margin-left: 20px;}
+.unitGroup .unit dt .tit em {display: inline-block;margin-left: 10px;font-size: 15px;color: #a0b0b6;}
+.unitGroup .unit dt .rowTable td .inp {min-width: 200px;}
+.unitGroup .unit dt .rowTable td[colspan] .inp {width: calc(50% - 120px);}
+.unitGroup .unit dd + dd{margin-top:10px;}
+.unitGroup .unit dd .v-input {width: 48%;}
+.unitGroup .unit dd .term {display: inline-block;width: 4%;text-align: center;font-size: 16px;color: #0c323d;}
+.unitGroup.rowGroup{display:flex; align-items:flex-end; width:100%;}
+.unitGroup.rowGroup > *{text-align:left; display:inline-flex; width:100%; flex-direction:column; padding-right:5px;}
+.unitGroup.rowGroup > *:last-child{padding:0;}
+.unitGroup.rowGroup .btnArea{width:auto;}
+.unitGroup.rowGroup .unit + .unit{margin:0;}
+.unitGroup.rowGroup .unit dt{margin-bottom:9px;}
+.unitGroup.rowGroup .unit dt .tit{font-size:15px; line-height:17px; font-weight:500; color:#667d85;}
+.unitGroup.rowGroup .unit dd > *{width:100%;}
+.unitGroup .unit .imgBox,
+.unitGroup .unit .infoBox {margin-bottom: 0px;}
+.unitGroup .unit .imgBox {display: flex;align-items: center;justify-content: center;}
+.unitGroup .unit .imgBox img {width: 130px;height: 130px;border: 1px solid #dddddd;border-radius: 50%;}
+.unitGroup .unit .infoBox {flex-wrap: wrap;padding: 20px 0px;}
+.unitGroup .unit .infoBox > * {width: 100%;flex: 0 0 100%;}
+.unitGroup .unit .infoBox .tit {font-size: 20px;font-weight: 500;line-height: 40px;}
+.unitGroup .unit .infoBox .manageBox {display: flex;align-items: center;}
+.unitGroup .unit .infoBox .manageBox > * {font-size: 16px;line-height: 40px;text-decoration: underline;color: #9cacb1;}
+.unitGroup .unit .infoBox .manageBox > *:hover {color: #397fd4;}
+.unitGroup .unit .infoBox .manageBox > * + * {margin-left: 30px;}
+
+.unitGroup.grid {display: flex;}
+.unitGroup.grid .unit + .unit {margin-top: 0;}
+.unitGroup.grid.col2 .unit {flex: 0 0 50%;width: 50%;}
+.unitGroup.grid.col2 .unit .inpField {width: 100%;padding: 10px 0px;}
+
+/* search area, inpGroup */
+.searchArea,
+.inpGroup{display:flex; align-items:center;}
+.searchArea > .inp,
+.inpGroup > .inp{width:100%;}
+.inpGroup.col2 > .inp {width: calc(50% - 3px);}
+.inpGroup.col2 > .inp + .inp {margin-left: 6px;}
+.rowTable table .inpGroup > .inp {min-width: 339px;width: auto;}
+.searchArea > *,
+.inpGroup > *{display:inline-flex;}
+.searchArea .btnArea,
+.inpGroup .btnArea,
+.inpGroup input + .fileUpload {margin-left:8px;}
+.searchArea .btnArea .btn + .btn{margin-left:4px;}
+.inpGroup .btn{min-width:100px; padding:0 26px;}
+
+/* text 관련 */
+p.text{font-size:16px; line-height:20px; overflow:hidden; word-break:break-all; color:#667d85; text-align:left; margin:0 !important;}
+p.fileText{display:inline-flex;align-items: center;font-size:15px;}
+p.infoText{font-size:14px; line-height:16px; overflow:hidden; word-break:break-all; color:#9cacb1; text-align:left; margin:14px 0 0 0 !important;}
+
+/* image 관련 */
+.infoImg{width:100%; margin:18px 0 10px;}
+
+/* tree & table column */
+.treeTable{display:grid; grid-template-columns:39% auto; grid-column-gap:10px;}
+.treeTable .tree{border:1px solid #dddddd; height:100%; overflow-y:auto;}
+.treeTable .treeHeader {display: flex;height: 50px;padding: 0px 20px;align-items: center;border: 1px solid #dddddd;border-bottom: 0px;}
+.treeTable .overflowAuto {overflow-x: auto;}
+
+/* 5column checkbox list */
+.checkboxList{overflow:hidden;}
+.checkboxList > ul{display:grid; grid-template-columns:repeat(5, 1fr); grid-column-gap:5px; padding:0 !important;}
+.checkboxList > ul > li{margin:9px 0;}
+
+/* multiple file list */
+.fileList{overflow:hidden; margin-top:8px; padding:0 !important;}
+.fileList li{display:inline-block; font-size:15px; color:#0c323d; margin-bottom:8px; margin-right:40px;}
+.fileList li:last-child{margin-right:0px;}
+.fileList .fileDelete{width:20px; height:20px; border-radius:50%; padding:0; position:relative; margin-left:8px;}
+.fileList .fileDelete:before{content:""; display:block; width:10px; height:10px; background:url(../assets/images/ico_fileDelete.png) no-repeat 0 0; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+.fileList .fileDelete > .text{font-size:0;}
+
+/* line */
+.lineBox {height: 1px;}
+.lineBox .line {display: inline-block;width: 100%;height: 100%;background: #dddddd;}

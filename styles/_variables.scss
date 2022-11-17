@@ -1,0 +1,25 @@
+// variables 
+
+// mainColor--> Red
+// $primary-color: rgba(234, 40, 91, 1);
+// $primary-color-hover: #c21442;
+// $primary-color-press: #78142e;
+// $primary-color-list-hover: #ffe4ea;
+// $primary-color-list-fix: rgba(234, 40, 91, 0.2);
+// $img-icobtn: url('../img/ico_icobtn_red.png') no-repeat;
+
+// mainColor--> Blue
+$primary-color: rgba(12, 145, 211, 1);
+$primary-color-hover: #046da1;
+$primary-color-press: #05344c;
+$primary-color-list-hover: #d4ffff;
+$primary-color-list-fix: rgba(12, 145, 211, 0.3);
+$img-icobtn: url('../img/ico_icobtn_blue.png') no-repeat;
+
+
+$primary-color-disabled: #ededed;
+$disabled-color-line: #e0e0e0;
+$img-icostate: url('../img/ico_state.png') no-repeat;
+$img-icostate-pipeline: url('../img/ico_state_pipeline.png') no-repeat;
+$gnb-icon: url('../img/ico_gnb01.png') 17px -1px no-repeat;
+$gnb-icon-active: $primary-color url('../img/ico_gnb01.png') 17px -61px no-repeat;

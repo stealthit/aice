@@ -1,0 +1,47 @@
+/* ########## RESET ########## */
+html, body, #app {height: 100%;}
+
+select {
+    appearance: none; 
+    -webkit-appearance: none;
+    background: transparent url('../img/ui_sel.png') right center no-repeat;
+}
+select::-ms-expand {display:none;}
+* { 
+    margin: 0; 
+    padding: 0; 
+    word-wrap: break-word; 
+    word-break: break-all; 
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    letter-spacing: -0.25px;
+}
+*, ::before, ::after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+ul, ol {list-style: none;}
+img {border: 0;}
+input:focus{outline:0;}
+a { 
+    text-decoration: none; 
+    border: 0; 
+    cursor: pointer;
+}
+button {cursor: pointer;}
+table {
+    border-collapse: collapse; 
+    table-layout: fixed;
+    border-spacing: 0; 
+    width: 100%;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}

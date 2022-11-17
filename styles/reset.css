@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import url("font.css");
+
+/* reset css */
+html,body {width:100%; height:100%; margin:0; padding:0;}
+html,body {font-size:13px; line-height:1; font-weight: 500;}/* default font size, family */
+*{font-family:"SCDream", sans-serif !important; box-sizing:border-box; outline:0;}/* default font size, family */
+
+div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,
+dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {margin:0; padding:0; border:0; font-size:inherit; /*font:inherit;*/ font-family:inherit; vertical-align:baseline;}
+
+body {*word-break:break-all; -ms-word-break:break-all; -webkit-text-size-adjust:none;}
+img,fieldset,iframe,hr {border:0 none}
+li {list-style:none}
+input,select,button {vertical-align:middle; padding:0; font:inherit; font-family:inherit;}
+img {vertical-align:middle}
+i,em,address {font-style:normal}
+label,button {cursor:pointer}
+a,a:hover,a:focus,a:active,a:visited {text-decoration:none}
+label {font-weight:normal;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content: none;}
+
+hr {display:none; line-height:0; font-size:0;}
+legend {*width:0}
+table {border-collapse: /*collapse*/; border-spacing:0;}
+table th, table td {vertical-align:middle;}
+input,textarea,button {-webkit-border-radius:0; border-radius:0;}
+strong {font-weight:500;}
+
+::-webkit-scrollbar {width:6px; height:6px;}
+::-webkit-scrollbar-track {background-color:#f4f4f4; border:none;  box-shadow:0;}
+::-webkit-scrollbar-track:horizontal {border-top:1px solid #f4f4f4;}
+::-webkit-scrollbar-thumb {background-color:#9cacb1; border-radius:0px; border:0px solid #aaa;}
+::-webkit-scrollbar-thumb:hover {background-color:#9cacb1;}
+
+/* ie용 */
+body {
+ scrollbar-face-color: #b0b0b0; 
+ scrollbar-highlight-color: #a3a3a3;
+ scrollbar-shadow-color: #a3a3a3; 
+ scrollbar-3dlight-color: #a3a3a3;
+ scrollbar-arrow-color: #aaa; 
+ scrollbar-track-color: #e0e0e0;
+ scrollbar-darkshadow-color: #e0e0e0; 
+}

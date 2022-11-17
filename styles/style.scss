@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "NotoSansCJKkr.css";
+
+@import "variables";
+@import "reset";
+@import "form";
+@import "table";
+@import "layout";
+@import "common";
+
+
+
+/* ########## PlugIn-reStyle ########## */
+
+/* Select */
+.v-text-field.v-text-field--solo .v-input__control {
+    min-height: 39px !important; 
+    height: 39px;
+    width: 210px;} //Select
+
+/* Datepicker */
+.v-input.v-input--is-readonly.theme--light.v-text-field.v-text-field--single-line.v-text-field--solo.v-text-field--is-booted.v-text-field--enclosed {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 0 10px;
+    color: #333 !important;
+    height: 39px;
+    .v-input__slot {
+        box-shadow: none !important;
+        padding: 0;
+        .v-text-field__slot {
+           label {
+                &.v-label theme--light {
+                    font-size: 14px;
+                }
+            } 
+        }
+    }
+} 
+.theme--light.v-text-field--solo>.v-input__control>.v-input__slot {background: transparent !important;}
+.v-input.v-input--is-focused.v-input--is-readonly.theme--light.v-text-field--is-booted.v-text-field--endlosed.primary--text {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-color: $primary-color;
+    outline: none;
+} //Datepicker

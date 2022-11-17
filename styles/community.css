@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+.blind { display: none !important;}
+/* 커뮤니티 상세 */
+.commuWrap .titArea.type03 + .btnArea { margin: 5px 0 0 auto;}
+.commuWrap .btn.toggleSearchBtn { line-height: 48px; font-size: 17px;}
+.commuWrap .btn.toggleSearchBtn span {line-height: 46px;}
+.commuWrap .btn.toggleSearchBtn:hover input:not(:checked) + span {color: #0c323d;border-color: #ddd; background-color: rgba(0, 2, 8, .05);}
+.commuWrap .array_btn { padding-left:30px; display: flex; align-items: center; gap:18px; font-size: 17px; background: url(../assets/images/ico_array.png) no-repeat left 50%;}
+.commuWrap .array_btn .btn { padding:2px;}
+.commuWrap .array_btn .btn em { width: 11px; height:8px; display: inline-block; margin-left:8px; text-indent:-9999px; vertical-align: middle; background: url(../assets/images/ico_array_btn.png) no-repeat 50% 50%;}
+.commuWrap .array_btn .btn.disabled em { background: none !important;}
+.commuWrap .array_btn .btn.up em { transform: rotate(180deg);}
+.commuWrap .array_btn .btn.down em { transform: rotate(0deg);}
+
+.unitBox.certiList { padding:60px 0 10px; display: flex; gap: 22px; flex-wrap:wrap; }
+.unitBox.certiList .boxUint { position:relative; width:calc(25% - 17px); height:416px; font-size:15px; border-radius: 3px; box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%); overflow: hidden;}
+.unitBox.certiList .boxUint > div > span { display: inline-block;}
+.unitBox.certiList .boxUint .top { height:132px; padding: 25px 30px 0; display: flex; justify-content: space-between; color: #fff; background-color: #6026bc;}
+.unitBox.certiList .boxUint .top.ASSOCIATE { background-color: #00bc82;}
+.unitBox.certiList .boxUint .top.BASIC { background-color: #68A8F5;}
+/* .JUNIOR, .FUTURE 컬러 추가 */
+.unitBox.certiList .boxUint .top.JUNIOR { background-color: #ea6376;}
+.unitBox.certiList .boxUint .top.FUTURE { background-color: #fc7200;}
+.unitBox.certiList .boxUint .top::before { content: ''; position: absolute; display: block; width:0; height: 17px; top:35px; left:50%; border-left: 1px solid #DBE7F5;}
+.unitBox.certiList .boxUint .top .logo { width:94px; height:36px; text-indent: -9999px; background:url('../assets/images/logo_aifb_w.png') no-repeat; overflow: hidden;}
+.unitBox.certiList .boxUint .top .grade { margin-top: 7px; text-transform: capitalize;}
+.unitBox.certiList .boxUint .con { position: relative; height: 283px; padding: 90px 10px 45px;}
+.unitBox.certiList .boxUint .con .profImg { width:109px; height:109px; position:absolute; display: block; top:0; left:50%; transform: translate(-50%,-50%); border-radius:50%; /* background: url('../assets/images/ico_prof_bg.png'); */ object-fit:cover; overflow: hidden;}
+/* .unitBox.certiList .boxUint .con .profImg { width:109px; height:109px; position:absolute; display: block; top:0; left:50%; transform: translate(-50%,-50%); border-radius:50%;  object-fit:cover; background-color: #f3f3f3; overflow: hidden;} */
+.unitBox.certiList .boxUint .con .profImg > img { width:100%; height: 100%; object-fit:cover;}
+.unitBox.certiList .boxUint .con .badge { height: 32px; position: absolute; display: flex; padding:0 10px; top: 38px; left:50%; border: 1px solid #ddd; border-radius:15px; background-color: #fff;transform:translateX(-50%); align-items: center;}
+.unitBox.certiList .boxUint .con .badge img { height:17px;}
+.unitBox.certiList .boxUint .con .name { margin-bottom:15px; font-size:28px; font-weight:600; letter-spacing: 8px;}
+.unitBox.certiList .boxUint .con .profDetail dl { display: flex; justify-content: center;}
+.unitBox.certiList .boxUint .con .profDetail dt { margin-right: 8px;}
+.unitBox.certiList .boxUint .con .profDetail dd.btm { margin-top: 15px; color: #9CACB1;}
+.unitBox.certiList .boxUint .snsWrap { display: none; position: absolute; left: 50%; bottom:45px; transform: translateX(-50%);}
+.unitBox.certiList .boxUint .snsWrap ul { padding:0; display: flex; justify-content: center; gap:18px; }
+.unitBox.certiList .boxUint .snsWrap li { width:50px; height:50px; border-radius: 50%; background-color: #F3F3F3; overflow: hidden;}
+.unitBox.certiList .boxUint .snsWrap li a { display: block; width: 100%; height:100%; text-indent: -9999px; background-image: url('../assets/images/ico_sns2.png'); image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast; }
+.unitBox.certiList .boxUint .snsWrap li.facebook a { background-position-x: 0;}
+.unitBox.certiList .boxUint .snsWrap li.linkedin a { background-position-x: -50px;}
+.unitBox.certiList .boxUint .snsWrap li.naver a { background-position-x: -100px;}
+.unitBox.certiList .boxUint .snsWrap li.github a { background-position-x: -150px;}
+.unitBox.certiList .boxUint .snsWrap li.remember a { background-position-x: -200px;}
+.unitBox.certiList .boxUint .snsWrap li.tistory a { background-position-x: -250px;}
+.unitBox.certiList .boxUint .snsWrap li.instagram a { background-position-x: -300px;}
+.unitBox.certiList .boxUint:hover .snsWrap { display: block;}
+.unitBox.certiList .boxUint:hover .top,
+.unitBox.certiList .boxUint:hover .con { background-color: #0C323D;}
+.unitBox.certiList .boxUint:hover .con .profImg,
+.unitBox.certiList .boxUint:hover .con .badge,
+.unitBox.certiList .boxUint:hover .con .profDetail { visibility: hidden; opacity: 0;}
+.unitBox.certiList .boxUint:hover .con .name { display: none; left: 50%; transform: translateX(-50%); bottom: 100px; color:#fff;}
+
+/* hashtag 영역 추가 220525*/
+.unitBox.certiList .boxUint .hashtagWrap { display: none; position: initial; left: 50%; }
+.unitBox.certiList .boxUint .hashtagWrap ul { display: inline-block; justify-content: center; gap:18px; padding-left: 0px; }
+.unitBox.certiList .boxUint .hashtagWrap li { display: inline-block !important; border:0px solid #fff; border-radius: 10%; color:#fff; }
+.unitBox.certiList .boxUint .hashtagWrap li:last-child { margin-right: 0px;}
+
+.unitBox.certiList .boxUint .snsWrap { display: none; position: absolute; left: 50%; bottom:45px; transform: translateX(-50%);}
+.unitBox.certiList .boxUint .snsWrap ul { display: table-cell !important; padding: 2px;; justify-content: center; gap:18px; }
+.unitBox.certiList .boxUint .snsWrap li {  width:50px; height:50px; border-radius: 50%; background-color: #F3F3F3; overflow: hidden;}
+.unitBox.certiList .boxUint .snsWrap li a { display: block; width: 100%; height:100%; text-indent: -9999px; background-image: url('../assets/images/ico_sns2.png'); image-rendering: crisp-edges; image-rendering: -webkit-optimize-contrast; }
+.unitBox.certiList .boxUint .snsWrap li.facebook a { background-position-x: 0;}
+.unitBox.certiList .boxUint .snsWrap li.linkedin a { background-position-x: -50px;}
+.unitBox.certiList .boxUint .snsWrap li.naver a { background-position-x: -100px;}
+.unitBox.certiList .boxUint .snsWrap li.github a { background-position-x: -150px;}
+.unitBox.certiList .boxUint .snsWrap li.remember a { background-position-x: -200px;}
+.unitBox.certiList .boxUint .snsWrap li.tistory a { background-position-x: -250px;}
+.unitBox.certiList .boxUint .snsWrap li.instagram a { background-position-x: -300px;}
+.unitBox.certiList .boxUint:hover .hashtagWrap,
+.unitBox.certiList .boxUint:hover .snsWrap { display: block;}
+.unitBox.certiList .boxUint:hover .top,
+.unitBox.certiList .boxUint:hover .con { background-color: #444444;}
+.unitBox.certiList .boxUint:hover .con .profImg,
+.unitBox.certiList .boxUint:hover .con .profDetail { visibility: hidden; opacity: 0;}
+.unitBox.certiList .boxUint:hover .con .name { position: absolute; left: 50%; transform: translateX(-50%); bottom: 100px; color:#fff;}
+/* 프로필 등록 */
+.userWrap.commu .cntBox { padding: 42px 70px 70px;}
+.userWrap.commu .cntBox h1.cntTxtTit { margin:13px 0 35px; font-size: 22px; font-weight: 600;}
+.userWrap.commu .cntBox .termList + div[class*=unitGroup] { margin-top: 35px;}
+.userWrap.commu.detail .cntBox .inpGroup .btn{min-width:118px; margin-left:5px; padding:0; justify-content:center;}
+.userWrap.commu.detail .cntBox .inpGroup select.inp.prt { width: auto; max-width: 152px; margin-right:5px; }
+.userWrap.commu.detail .cntBox .profList { padding:25px 0 10px; border-top: 1px solid #ddd; overflow: hidden;}
+.userWrap.commu.detail .cntBox .profList dt, .commu .cntBox .profList dd { margin-bottom:15px; float: left; font-size: 16px;}
+.userWrap.commu.detail .cntBox .profList dt { clear: left; width:60px; color:#48656d;}
+.userWrap.commu.detail .cntBox .profList dd {width: calc(100% - 60px); word-break: break-all;}
+.userWrap.commu .default_img {}
+.userWrap.commu .default_img .tit{ font-size: 16px; color:#48656d;}
+.userWrap.commu .default_img ul { padding:10px 0; display: flex; gap:20px; flex-wrap: wrap;}
+.userWrap.commu .default_img ul li { width:calc(25% - 15px); aspect-ratio: 1 / 1; overflow: hidden; }
+.userWrap.commu .default_img ul li input[type=checkbox] { position:absolute; width: 0; height: 0; visibility:hidden; opacity: 0;}
+.userWrap.commu .default_img ul li label { width:100%; height:100%; display: block; border-radius:50%; border: 1px solid #ddd; background-color:#f3f3f3; }
+.userWrap.commu .default_img ul li input[type=checkbox]:checked + label { border-color: #397fd4;}
+.userWrap.commu .default_img ul li label img { width: 100%; height:100%; object-fit: contain; }
+.userWrap.commu .flUploadList ul { padding: 0; border:1px solid #ddd; border-radius: 3px; overflow: hidden; background-color: #f4f4f4;}
+.userWrap.commu .flUploadList li{ display: flex; height: 38px; padding: 0 13px; align-items: center; font-size:14px; }
+.userWrap.commu .flUploadList li + li { border-top: 1px solid #ddd; height:39px;}
+.userWrap.commu .flUploadList li > p { max-width:calc(100% - 40px); display: block; margin:0; word-break:keep-all; text-overflow: ellipsis; overflow: hidden; }
+.userWrap.commu .flUploadList li p .tit { margin-right: 10px;}
+.userWrap.commu .flUploadList li .btn_del { position:relative; margin-left: auto; color:#397fd4;}
+.userWrap.commu .flUploadList li .btn_del .text::before { position:absolute; width: 0; height:0; display: block; bottom: 0; content: ''; border-bottom:1px solid #397fd4; transition:width .1s ease-in-out;}
+.userWrap.commu .flUploadList li .btn_del:hover .text::before { width: 100%; }
+.userWrap.commu .cntBox .btnArea { margin-top: 40px;}
+.userWrap.commu .cntBox .btnArea.multi { display: flex; justify-content: space-between; gap: 10px; }
+.userWrap.commu .cntBox .btnArea.multi > button { flex:1; }
+.userWrap.commu .fileUpload .btn .text { font-weight: 500;}
+.switcher label { position:relative; width: 78px; height:40px; display: block; border: 1px solid #ddd; border-radius:20px; transition:all .2s ease; background-color: #f4f4f4;}
+.switcher label::after { position: absolute; width:30px; height:30px; top:4px; left:4px; display: block; content: ''; border-radius: 50%; transition:left .2s ease; background-color: #fff; box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%);}
+.switcher input[type=checkbox] { position: absolute; width: 0; height: 0; visibility: hidden; opacity: 0;}
+.switcher input[type=checkbox] label.active,
+.switcher input[type=checkbox]:checked + label{ border-color: #2cbbb7; background-color: #2cbbb7;}
+.switcher input[type=checkbox] label.active::after,
+.switcher input[type=checkbox]:checked + label::after { left: 42px;}

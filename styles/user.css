@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+.theme--light.v-application{background:transparent !important;}
+.nczWrap{min-height:100vh; position:relative;}
+.nczWrap.user {background-color:#f4f4f4;}
+.nczWrap.user .inpImgchange {position: absolute;width: 0px;height: 0px;padding: 0px;margin: -1px;overflow: hidden;border: 0px;clip: rect(0,0,0,0);}
+/* #header{ background-color:#ffffff; height:90px;}
+.header h1{display:flex; height:100%; justify-content:center; align-items:center;} */
+
+.userWrap{padding:210px 0 120px;}
+.layerModalWrap.noPadding .layerModal,
+.layerModalWrap .userWrap {padding: 0px;}
+.userWrap .cntBox{width:620px; margin:0 auto; background-color:#ffffff; padding:100px 70px 80px; border-radius:5px; box-shadow:0 0 5px 0 rgba(0 0 0 / 15%);}
+
+.inpGrid > .inp{display:block; width:100%;}
+.inpGrid > .inp + .inp{margin-top:10px;}
+
+/* 계정 상태 */
+.userWrap.accountConfirm .cntBox:before{content:""; display:block; width:160px; height:90px; margin:0 auto 40px;}
+.userWrap.accountConfirm.complete .cntBox:before{background:url(../assets/images/ico_joinComplete.png) no-repeat 0 0; background-size:100%;}
+.userWrap.accountConfirm.password .cntBox:before{background:url(../assets/images/ico_userPassword.png) no-repeat 0 0; background-size:100%;}
+.userWrap.accountConfirm.security .cntBox:before{background:url(../assets/images/ico_userSecurity.png) no-repeat 0 0; background-size:100%;}
+.userWrap.accountConfirm.email .cntBox:before{background:url(../assets/images/ico_userEmail.png) no-repeat 0 0; background-size:100%;}
+.userWrap.accountConfirm.state .cntBox:before{background:url(../assets/images/ico_userState.png) no-repeat 0 0; background-size:100%;}
+.userWrap.accountConfirm .cntBox > p{color:#0c323d; font-size:20px; line-height:28px; margin-bottom:0 !important}
+.userWrap.accountConfirm .cntBox > p > strong{display:inline-block;font-size:30px; font-weight:700; line-height:30px;}
+.userWrap.accountConfirm .cntBox > p + p{margin-top:14px;}
+.userWrap.accountConfirm .cntBox > p.textMuted{font-size:18px; color:#9cacb1; line-height:24px;}
+.userWrap.accountConfirm .cntBox > p + p.textMuted{margin-top:25px;}
+.userWrap.accountConfirm .cntBox .btnArea{display:flex; padding-top:80px;}
+.userWrap.accountConfirm .cntBox .btnArea > button{width:100%;}
+.userWrap.accountConfirm .cntBox .btnArea > button + button{margin-left:8px;}
+
+.userWrap.accountConfirm.password .inpGrid{margin-top:48px;}
+.userWrap.accountConfirm.security .listTable{margin-top:45px;}
+
+/* login */
+.userWrap.login .cntBox{padding:100px 70px 80px;}
+.userWrap.login .cntBox > img{width:217px;}
+.userWrap.login .cntBox .field{margin-top:79px;}
+.userWrap.login .cntBox .field > .inp{width:100%; padding:0 20px;}
+.userWrap.login .cntBox .field > .inp + .inp{margin-top:10px;}
+.userWrap.login .cntBox > .inp{width:100%; padding:0 20px;}
+.userWrap.login .cntBox > .inp + .inp{margin-top:10px;}
+.userWrap.login .cntBox .inpField{display:block; text-align:left; margin:15px 0 0 20px;}
+.userWrap.login .cntBox .btnArea{padding-top:60px; margin-bottom:60px;}
+.userWrap.login .cntBox .social{display:flex; justify-content:center;}
+.userWrap.login .cntBox .social > button{width:100px; height:auto; border-radius:50%; position:relative;}
+.userWrap.login .cntBox .social > button + button{margin-left:20px;}
+.userWrap.login .cntBox .social > button:before{content:"";display: block;width:60px;height:60px;margin: 0px auto;background:url(../assets/images/ico_social.png) no-repeat 0 0; background-size:240px 60px;}
+.userWrap.login .cntBox .social button.naver:before{background-position-x:0;}
+.userWrap.login .cntBox .social button.kakao:before{background-position-x:-60px;}
+.userWrap.login .cntBox .social button.google:before{background-position-x:-120px;}
+.userWrap.login .cntBox .social button.facebook:before{background-position-x:-180px;}
+.userWrap.login .cntBox .social > button > span {display: block;margin-top: 5px;line-height: 30px;font-size: 14px;color: #0c323d;}
+.userWrap.login .cntBox .social + .btnArea{justify-content:center; padding-top:56px; margin:0;}
+.userWrap.login .cntBox .social + .btnArea button{width:auto;}
+.userWrap.login .cntBox [data-inp=tenant]{margin-top:25px;}
+
+
+/* 이용 약관 */
+.userWrap.term .cntBox{padding:42px 70px 70px;}
+.userWrap.term .termAll dt{display:flex; justify-content:space-between; align-items:center; height:55px; padding:0 10px; border-bottom:1px solid #a3acaf;}
+.userWrap.term .termAll dt .text{font-size:20px; font-weight:500;}
+.userWrap.term .termAll dd{text-align:left; padding:20px 10px 10px; border-top:1px solid #dddddd; font-size:15px; color:#667d85; line-height:22px;}
+.userWrap.term .termList dl{border-bottom:1px solid #dddddd;}
+.userWrap.term .termList dt{display:flex; justify-content:space-between; align-items:center; height:80px; padding:0 10px;}
+.userWrap.term .termList dt .text{font-size:16px; font-weight:500;}
+.userWrap.term .termList dd{display:none; text-align:left; border-top:1px solid #dddddd; padding:14px 10px; max-height:150px; overflow-y:auto; word-break:break-all; line-height:24px; font-size:14px; color:#667d85;}
+.userWrap.term .termList .termBox .bigFont {font-size: 18px;}
+.userWrap.term .termList .termBox + .termBox {margin-top: 14px;}
+.userWrap.term .termList .termBox.termTit {font-size: 16px;}
+.userWrap.term .termList .termBox ul {padding-left: 10px;}
+.userWrap.term .termList .termBox > ul {padding-left: 0px;}
+.userWrap.term .termList .termBox ul li > ul li {font-size: 13px;}
+.userWrap.term .termList .termBox a {font-size:13px; color:#667d85; line-height:22px;}
+.userWrap.term .termList .termBox .tableArea {display: block;padding: 5px 0px;}
+.userWrap.term .termList .termBox .tableArea table {table-layout: fixed;border: 1px solid #cccccc;}
+.userWrap.term .termList .termBox .tableArea table thead tr > * {background: #f4f4f4;}
+.userWrap.term .termList .termBox .tableArea table th,
+.userWrap.term .termList .termBox .tableArea table td {padding: 6px 4px; text-align: center;border: 1px solid #f0f0f0;line-height: 20px;font-size: 12px;}
+.userWrap.term .termList .termBox .tableArea table th {font-weight: 500;}
+
+.userWrap.term .btnArea{margin-top:50px;}
+.userWrap.term .termList .active dd{display:block;}
+.userWrap.term .termList .active .arrowBtn{transform:rotate(180deg);}
+.arrowBtn{width:20px; height:20px; background:url(../assets/images/ico_arrow.png) no-repeat center center;}
+
+/* 회원가입 */
+.userWrap.join .cntBox{width:620px; padding:80px 130px 80px 130px;}
+.userWrap.join .cntBox > img{width:196px;}
+.userWrap.join .cntBox > p{font-size:18px; color:#667d85; line-height:30px; margin:25px 0 0 0;}
+.userWrap.join .cntBox > .grid {margin-top:50px; display:grid; grid-template-columns:repeat(1,1fr); grid-column-gap:200px; position:relative;}
+.userWrap.join .cntBox > .grid h2 {margin-bottom: 10px;font-weight:500; text-align:center; font-size:20px; color:#0c323d; line-height:40px;}
+.userWrap.join .cntBox > .grid .normal + .social {margin-top: 30px;}
+.userWrap.join .cntBox > .grid .normal button,
+.userWrap.join .cntBox > .grid .social button{width:100%; display:flex; justify-content:center; align-items:center;}
+.userWrap.join .cntBox > .grid .social button .text{line-height:48px; vertical-align:middle; color:#ffffff;}
+.userWrap.join .cntBox > .grid .social button:before{content:""; display:inline-block; vertical-align:middle; margin-right:10px; width:34px; height:34px; background:url(../assets/images/ico_social_type2.png) no-repeat 0 0; background-size:136px 34px;}
+.userWrap.join .cntBox > .grid .social button:hover:before{animation:btnHover-sliderTop 0.2s ease-out 0s 1 alternate;}
+.userWrap.join .cntBox > .grid .social button + button{margin-top:10px;}
+.userWrap.join .cntBox > .grid .social button.naver{background-color:#1ec800;}
+.userWrap.join .cntBox > .grid .social button.kakao{background-color:#f5d60b;}
+.userWrap.join .cntBox > .grid .social button.kakao:before{background-position-x:-34px;}
+.userWrap.join .cntBox > .grid .social button.google{background-color:#ffffff; border-color:#dddddd;}
+.userWrap.join .cntBox > .grid .social button.google .text{color:#0c323d;}
+.userWrap.join .cntBox > .grid .social button.google:before{background-position-x:-68px;}
+.userWrap.join .cntBox > .grid .social button.facebook{background-color:#4767aa;}
+.userWrap.join .cntBox > .grid .social button.facebook:before{background-position-x:-102px;}
+.userWrap.join .cntBox > .grid .normal .inpGroup .btn{min-width:130px; padding:0; justify-content:center; margin-left:5px;}
+.userWrap.join .cntBox > .grid .normal .field > .inp{width:100%; margin-top:10px;}
+.userWrap.join .cntBox > .grid .normal .field > .btnArea{margin-top:40px; padding:0;}
+.userWrap.join.detail .cntBox{width:620px; padding:52px 70px 80px 70px;}
+.userWrap.join.detail .cntBox .inpGroup .btn{min-width:140px; margin-left:5px; padding:0; justify-content:center;}
+.userWrap.join.detail .cntBox .btnArea{margin-top:40px;}
+
+/* 회원정보 변경 */
+.cntBox .field .btnArea{padding-top:80px; display:flex;}
+.cntBox .field .btnArea > button{width:calc(50% - 4px);}
+.cntBox .field .btnArea > button + button{margin-left:8px;}
+.cntBox .btnArea.full > button{width:100%; margin:0;}
+.userWrap.join.detail .cntBox .btnArea.user {margin-top: 20px;}
+.btnArea.user .btn.textBtn {padding: 0px;line-height: 35px;font-size: 15px;color: #48656d;}
+.btnArea.user .btn.textBtn + .btn.textBtn {margin-left: 70px;}
+.btnArea.user .btn.textBtn + .btn.textBtn:after {display: none;}
+
+/************************************ mobile ************************************/
+@media only screen and (min-height: 1000px) {
+    .userWrap{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+
+}
+@media only screen and (max-width: 580px) {
+    .nczWrap{min-width:auto; min-height:auto;}
+    .header{display:none;}
+    .userWrap{padding:0; position:static; transform:inherit;}
+    .userWrap .cntBox{width:100vw; height:100%; padding:20px !important; box-shadow:none;}
+    .userWrap.login .cntBox,
+    .userWrap.join .cntBox,
+    .userWrap.accountConfirm .cntBox{padding:80px 20px 20px 20px !important;}
+    .userWrap.accountConfirm .cntBox .btnArea{padding-top:40px;}
+    .userWrap.login .cntBox .field{margin-top:40px;}
+    .userWrap.login .cntBox .field .btnArea{padding-top:40px; margin-bottom:40px;}
+    .userWrap.login .cntBox .field .social > button + button{margin-left:20px;}
+    .userWrap.login .cntBox .field .social + .btnArea{display:grid; grid-template-columns:repeat(2,1fr); grid-row-gap:10px;}
+    .userWrap.login .cntBox .field .social + .btnArea .btn.textBtn{padding:0; margin:0; }
+    .userWrap.login .cntBox .field .social + .btnArea .btn.textBtn:after{display:none;}
+    .userWrap.join .cntBox{width:100%;}
+    .userWrap.join .cntBox > .grid{grid-template-columns:repeat(1,1fr); grid-column-gap:0px; grid-row-gap:40px; margin-top:40px;}
+    .userWrap.join .cntBox > .grid .normal{grid-area:1;}
+    .userWrap.join .cntBox > .grid .social > .btnArea{display:grid; grid-template-columns: repeat(4,1fr);}
+    .userWrap.join .cntBox > .grid .social > .btnArea .btn{margin:0; width:60px; height:60px; border-radius:50%; position:relative; margin:0 auto;}
+    .userWrap.join .cntBox > .grid .social > .btnArea .btn:before{display:block; margin:0; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+    .userWrap.join .cntBox > .grid .social > .btnArea .text{font-size:0;}
+    .userWrap.join.detail .cntBox{width:100%; padding-top:20px !important;}
+    .userWrap.join .cntBox > p{font-size:14px;}
+    .userWrap.accountConfirm .cntBox > p{font-size:18px;}
+    .userWrap.accountConfirm .cntBox > p.textMuted{font-size:14px;}
+    .userWrap .cntBox > .btnArea{display:grid !important; grid-template-columns:repeat(1,1fr);}
+    .userWrap .cntBox > .btnArea button + button{margin:10px 0 0 0 !important;}
+    .inpField .text{text-align:left;}
+    .userWrap.join .cntBox > .grid:before{display:none;}
+    .userWrap.join .cntBox > .grid .social button:hover:before{animation:none;}
+    .btn.xl{height:50px; line-height:48px; font-size:18px;}
+    .userWrap.accountConfirm.security .listTable.type02 thead th{height:40px; font-size:15px;}
+    .userWrap.accountConfirm.security .listTable.type02 tbody tr > *{height:40px; font-size:14px;}
+    .userWrap.accountConfirm.password .inpGrid{margin-top:28px;}
+    .userWrap.term .cntBox{padding-top:40px !important}
+    .userWrap.term .termList dt{height:60px;}
+    .userWrap.term .termList dt .text{font-size:15px;}
+    .userWrap.term .termList dd{font-size:13px;}
+    .userWrap.term .termAll dt .text{font-size:17px;}
+    .userWrap.term .termAll dd{font-size:14px;}
+}

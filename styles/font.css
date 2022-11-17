@@ -1,0 +1,62 @@
+/* user&admin font-weight: 400/500 ; 동일 사용 */
+
+@font-face {
+     font-family: 'SCDream';
+     font-style: normal;
+     font-weight: 300;
+     src: url('../assets/webfont/SCDream-300.eot');
+     src: url('../assets/webfont/SCDream-300.eot?#iefix') format('embedded-opentype'),
+          url('../assets/webfont/SCDream-300.woff2') format('woff2'),
+          url('../assets/webfont/SCDream-300.woff') format('woff');
+   }
+
+   @font-face {
+     font-family: 'SCDream';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../assets/webfont/SCDream-400.eot');
+     src: url('../assets/webfont/SCDream-400.eot?#iefix') format('embedded-opentype'),
+          url('../assets/webfont/SCDream-400.woff2') format('woff2'),
+          url('../assets/webfont/SCDream-400.woff') format('woff');
+   }
+   
+   @font-face {
+     font-family: 'SCDream';
+     font-style: normal;
+     font-weight: 500;
+     src: url('../assets/webfont/SCDream-400.eot');
+     src: url('../assets/webfont/SCDream-400.eot?#iefix') format('embedded-opentype'),
+          url('../assets/webfont/SCDream-400.woff2') format('woff2'),
+          url('../assets/webfont/SCDream-400.woff') format('woff');
+   }
+
+   @font-face {
+    font-family: 'SCDream';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/webfont/SCDream-500.eot');
+    src: url('../assets/webfont/SCDream-500.eot?#iefix') format('embedded-opentype'),
+         url('../assets/webfont/SCDream-500.woff2') format('woff2'),
+         url('../assets/webfont/SCDream-500.woff') format('woff');
+  }
+   
+   @font-face {
+     font-family: 'SCDream';
+     font-style: normal;
+     font-weight: 700;
+     src: url('../assets/webfont/SCDream-600.eot');
+     src: url('../assets/webfont/SCDream-600.eot?#iefix') format('embedded-opentype'),
+          url('../assets/webfont/SCDream-600.woff2') format('woff2'),
+          url('../assets/webfont/SCDream-600.woff') format('woff');
+   }
+
+   @font-face {
+     font-family: 'SCDream';
+     font-style: normal;
+     font-weight: 800;
+     src: url('../assets/webfont/SCDream-800.eot');
+     src: url('../assets/webfont/SCDream-800.eot?#iefix') format('embedded-opentype'),
+          url('../assets/webfont/SCDream-800.woff2') format('woff2'),
+          url('../assets/webfont/SCDream-800.woff') format('woff');
+   }
+   
