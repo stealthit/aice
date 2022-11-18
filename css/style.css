@@ -43,6 +43,7 @@
 }
 
 .sort-box .selected {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,8 +105,8 @@
 }
 
 .sort-box.open ul.optionList li.optionItem {
+  cursor: pointer;
   width: 100%;
-  cursor: default;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +170,12 @@
   content: url(../images/ic_comment.png);
   width: 16px;
   height: 17px;
+}
+
+.ic-more {
+  content: url(../images/ic_more.png);
+  width: 32px;
+  height: 32px;
 }
 
 .img-banner {
@@ -399,13 +406,17 @@
   width: 1400px;
   margin: 0 auto;
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main .search-wrap .search-word.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main .search-wrap .search-word .word-item {
@@ -432,6 +443,11 @@
 .main .search-wrap .search-result {
   width: 1400px;
   margin: 80px auto;
+  display: none;
+}
+
+.main .search-wrap .search-result.on {
+  display: block;
 }
 
 .main .search-wrap .search-result .result-count {
@@ -447,10 +463,8 @@
 }
 
 .main .search-wrap .search-result .no-data {
+  display: none;
   margin: 120px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -466,6 +480,21 @@
   font-size: 25px;
   line-height: 30px;
   color: #9B9C9D;
+}
+
+.main .search-wrap .search-result .no-data.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .search-wrap .search-result .result-list {
+  display: none;
+  margin-top: 80px;
+}
+
+.main .search-wrap .search-result .result-list.on {
+  display: block;
 }
 
 .main .search-wrap .search-result .result-list .grid-box {
@@ -498,12 +527,46 @@
   margin: 0 auto;
 }
 
-.main .section .section-title {
+.main .section .section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.main .section .section-top .section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
   color: #464646;
-  margin-bottom: 30px;
+}
+
+.main .section .section-top .section-title .ic-more {
+  margin-left: 20px;
+}
+
+.main .section .section-top .arrow-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .main .section .img-box {
@@ -561,18 +624,28 @@
   background: #D9D9D9;
 }
 
-.main .section .swiper-button-prev {
-  left: -66px !important;
+.main .section .swiper-button-prev, .main .section .swiper-button-next {
+  position: initial;
+  width: 32px;
+  height: 32px;
 }
 
-.main .section .swiper-button-next {
-  right: -66px !important;
-}
-
-.main .section1 .mySwiper1 .swiper-wrapper .swiper-slide .img-box {
-  width: 307px;
-  height: 200px;
-  overflow: hidden;
+.main .section .swiper-button-prev::after, .main .section .swiper-button-next::after {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E0DFDF;
+  color: #9B9C9D;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .main .section1 .mySwiper1 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
@@ -653,44 +726,7 @@
 }
 
 .main .section3 .section-content {
-  position: relative;
   margin-bottom: 40px;
-}
-
-.main .section3 .section-content .cont-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.main .section3 .section-content .cont-top .btn-more {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 16px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #9B9C9D;
-}
-
-.main .section3 .section-content .cont-top .btn-more .ic-more {
-  content: url(../images/ic_more.png);
-  width: 8px;
-  height: 14px;
-}
-
-.main .section3 .mySwiper2 .swiper-wrapper .swiper-slide .img-box {
-  width: 307px;
-  height: 200px;
-  overflow: hidden;
 }
 
 .main .section3 .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
@@ -713,12 +749,6 @@
   background: url(../images/img_ready1.png);
 }
 
-.main .section3 .mySwiper3 .swiper-wrapper .swiper-slide .img-box {
-  width: 307px;
-  height: 200px;
-  overflow: hidden;
-}
-
 .main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
   background: url(../images/img_exam1.png);
 }
@@ -737,12 +767,6 @@
 
 .main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
   background: url(../images/img_exam1.png);
-}
-
-.main .section3 .mySwiper4 .swiper-wrapper .swiper-slide .img-box {
-  width: 307px;
-  height: 200px;
-  overflow: hidden;
 }
 
 .main .section3 .mySwiper4 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
@@ -765,12 +789,6 @@
   background: url(../images/img_science1.png);
 }
 
-.main .section3 .mySwiper5 .swiper-wrapper .swiper-slide .img-box {
-  width: 307px;
-  height: 200px;
-  overflow: hidden;
-}
-
 .main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
   background: url(../images/img_insight1.png);
 }
@@ -789,12 +807,6 @@
 
 .main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
   background: url(../images/img_insight1.png);
-}
-
-.main .section3 .mySwiper6 .swiper-wrapper .swiper-slide .img-box {
-  width: 307px;
-  height: 200px;
-  overflow: hidden;
 }
 
 .main .section3 .mySwiper6 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {

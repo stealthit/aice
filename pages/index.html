@@ -184,7 +184,8 @@
                     <div class="ic-search"></div>
                   </div>
                 </form>
-                <div class="search-word">
+                <!-- <div class="search-word"> 검색워드 출력하지 않을때 search-word 에 on 제거-->
+                <div class="search-word on">
                   <div class="word-item">javascript</div>
                   <div class="word-item">react</div>
                   <div class="word-item">node js</div>
@@ -192,18 +193,21 @@
                   <div class="word-item">exeress</div>
                 </div>
                 <!-- 검색결과 영역 -->
-                <div class="search-result">
+                <!-- <div class="search-result on"> 검색결과 건수 화면 출력시 result-count 에 on class 추가-->
+                <div class="search-result on">
                   <div class="result-count">
                     ‘<span>AI</span>’에 대한 검색 결과 <span>4</span>건
-                  </div>
+                  </div>                  
+                  <!-- <div class="no-data on">  search data가 없을경우 no-data 에 on class 추가-->
                   <div class="no-data">
                     <div class="ic-error"></div>
                     검색 결과가 없습니다.
                   </div>
-                  <div class="result-list section">
-                    <div class="sort-box open">
+                  <!-- <div class="result-list on section"> 검색결과 출력시 result-list 에 on class 추가-->
+                  <div class="result-list on section">
+                    <div class="sort-box">
                       <div class="selected">
-                        <div class="selected-value">최신순</div>
+                        <div class="selected-value">조회순</div>
                         <div class="ic-arrow"></div>
                       </div>                      
                       <ul class="optionList">
@@ -279,9 +283,13 @@
               </div>
               <div class="main-content">
                 <div class="section1 section">
-                  <div class="section-title">이달의 베스트 강의 TOP 10</div>
-                  <div class="swiper-button-prev swiper-button-prev1"></div><!-- 이전 버튼 -->       
-                  <div class="swiper-button-next swiper-button-next1"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                  <div class="section-top">
+                    <div class="section-title">이달의 베스트 강의 TOP 10 <div class="ic-more"></div></div>
+                    <div class="arrow-group">
+                      <div class="swiper-button-prev swiper-button-prev1"></div><!-- 이전 버튼 -->       
+                      <div class="swiper-button-next swiper-button-next1"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    </div>
+                  </div>                  
                   <div class="swiper mySwiper1">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -374,12 +382,13 @@
                 </div>
                 <div class="section3 section">
                   <div class="section-content">
-                    <div class="cont-top">
-                      <div class="section-title">AICE Ready</div>
-                      <div class="btn-more">더보기<div class="ic-more"></div></div>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-prev2"></div><!-- 이전 버튼 -->       
-                    <div class="swiper-button-next swiper-button-next2"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="section-top">
+                      <div class="section-title">AICE Ready <div class="ic-more"></div></div>
+                      <div class="arrow-group">
+                        <div class="swiper-button-prev swiper-button-prev2"></div><!-- 이전 버튼 -->       
+                        <div class="swiper-button-next swiper-button-next2"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                      </div>
+                    </div>                       
                     <div class="swiper mySwiper2">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -461,12 +470,13 @@
                     </div>
                   </div>
                   <div class="section-content">
-                    <div class="cont-top">
-                      <div class="section-title">AICE 사례 실습</div>
-                      <div class="btn-more">더보기<div class="ic-more"></div></div>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-prev3"></div><!-- 이전 버튼 -->       
-                    <div class="swiper-button-next swiper-button-next3"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="section-top">
+                      <div class="section-title">AICE 사례 실습 <div class="ic-more"></div></div>
+                      <div class="arrow-group">
+                        <div class="swiper-button-prev swiper-button-prev3"></div><!-- 이전 버튼 -->       
+                        <div class="swiper-button-next swiper-button-next3"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                      </div>
+                    </div>                        
                     <div class="swiper mySwiper3">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -548,12 +558,13 @@
                     </div>
                   </div>
                   <div class="section-content">
-                    <div class="cont-top">
-                      <div class="section-title">Data Science</div>
-                      <div class="btn-more">더보기<div class="ic-more"></div></div>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-prev4"></div><!-- 이전 버튼 -->       
-                    <div class="swiper-button-next swiper-button-next4"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="section-top">
+                      <div class="section-title">Data Science <div class="ic-more"></div></div>
+                      <div class="arrow-group">
+                        <div class="swiper-button-prev swiper-button-prev4"></div><!-- 이전 버튼 -->       
+                        <div class="swiper-button-next swiper-button-next4"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                      </div>
+                    </div>                         
                     <div class="swiper mySwiper4">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -635,12 +646,13 @@
                     </div>
                   </div>
                   <div class="section-content">
-                    <div class="cont-top">
-                      <div class="section-title">AI Insight</div>
-                      <div class="btn-more">더보기<div class="ic-more"></div></div>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-prev5"></div><!-- 이전 버튼 -->       
-                    <div class="swiper-button-next swiper-button-next5"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="section-top">
+                      <div class="section-title">AI Insight <div class="ic-more"></div></div>
+                      <div class="arrow-group">
+                        <div class="swiper-button-prev swiper-button-prev5"></div><!-- 이전 버튼 -->       
+                        <div class="swiper-button-next swiper-button-next5"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                      </div>
+                    </div>                         
                     <div class="swiper mySwiper5">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -722,12 +734,13 @@
                     </div>
                   </div>
                   <div class="section-content">
-                    <div class="cont-top">
-                      <div class="section-title">AI VOD교육팩</div>
-                      <div class="btn-more">더보기<div class="ic-more"></div></div>
-                    </div>
-                    <div class="swiper-button-prev swiper-button-prev6"></div><!-- 이전 버튼 -->       
-                    <div class="swiper-button-next swiper-button-next6"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="section-top">
+                      <div class="section-title">AI VOD교육팩 <div class="ic-more"></div></div>
+                      <div class="arrow-group">
+                        <div class="swiper-button-prev swiper-button-prev6"></div><!-- 이전 버튼 -->       
+                        <div class="swiper-button-next swiper-button-next6"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                      </div>
+                    </div>                                             
                     <div class="swiper mySwiper6">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -861,11 +874,14 @@
     $("#" + tabId).addClass("active").siblings().removeClass('active');
     })
 
+    // 정렬박스 -최신순,조회순,인기순
     $(".sort-box .selected").on("click",function(){
       $(".sort-box").toggleClass("open");
     })
     $(".optionList .optionItem").on("click",function(){
-      $(".sort-box .selected").val = $(this).val;
+      $(".sort-box .selected .selected-value")[0].innerText = $(this)[0].innerText;
+      $(this).addClass('sel').siblings().removeClass('sel');
+      $(".sort-box").removeClass("open");
     })
     // input delete button
     const formSearchInput = document.querySelector('#search-text');
