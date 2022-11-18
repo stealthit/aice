@@ -505,22 +505,6 @@
   gap: 50px;
 }
 
-.main .search-wrap .search-result .result-list .grid-box .grid-item:nth-child(1) .img-box {
-  background: url(../images/img_ready1.png);
-}
-
-.main .search-wrap .search-result .result-list .grid-box .grid-item:nth-child(2) .img-box {
-  background: url(../images/img_ready2.png);
-}
-
-.main .search-wrap .search-result .result-list .grid-box .grid-item:nth-child(3) .img-box {
-  background: url(../images/img_ready3.png);
-}
-
-.main .search-wrap .search-result .result-list .grid-box .grid-item:nth-child(4) .img-box {
-  background: url(../images/img_ready4.png);
-}
-
 .main .section {
   position: relative;
   width: 1400px;
@@ -648,26 +632,6 @@
   font-weight: bold;
 }
 
-.main .section1 .mySwiper1 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
-  background: url(../images/img_ready1.png);
-}
-
-.main .section1 .mySwiper1 .swiper-wrapper .swiper-slide:nth-child(2) .img-box {
-  background: url(../images/img_ready2.png);
-}
-
-.main .section1 .mySwiper1 .swiper-wrapper .swiper-slide:nth-child(3) .img-box {
-  background: url(../images/img_ready3.png);
-}
-
-.main .section1 .mySwiper1 .swiper-wrapper .swiper-slide:nth-child(4) .img-box {
-  background: url(../images/img_ready4.png);
-}
-
-.main .section1 .mySwiper1 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
-  background: url(../images/img_ready1.png);
-}
-
 .main .section2 {
   margin: 80px 0;
   height: 260px;
@@ -727,105 +691,5 @@
 
 .main .section3 .section-content {
   margin-bottom: 40px;
-}
-
-.main .section3 .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
-  background: url(../images/img_ready1.png);
-}
-
-.main .section3 .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(2) .img-box {
-  background: url(../images/img_ready2.png);
-}
-
-.main .section3 .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(3) .img-box {
-  background: url(../images/img_ready3.png);
-}
-
-.main .section3 .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(4) .img-box {
-  background: url(../images/img_ready4.png);
-}
-
-.main .section3 .mySwiper2 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
-  background: url(../images/img_ready1.png);
-}
-
-.main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
-  background: url(../images/img_exam1.png);
-}
-
-.main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(2) .img-box {
-  background: url(../images/img_exam2.png);
-}
-
-.main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(3) .img-box {
-  background: url(../images/img_exam3.png);
-}
-
-.main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(4) .img-box {
-  background: url(../images/img_exam4.png);
-}
-
-.main .section3 .mySwiper3 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
-  background: url(../images/img_exam1.png);
-}
-
-.main .section3 .mySwiper4 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
-  background: url(../images/img_science1.png);
-}
-
-.main .section3 .mySwiper4 .swiper-wrapper .swiper-slide:nth-child(2) .img-box {
-  background: url(../images/img_science2.png);
-}
-
-.main .section3 .mySwiper4 .swiper-wrapper .swiper-slide:nth-child(3) .img-box {
-  background: url(../images/img_science3.png);
-}
-
-.main .section3 .mySwiper4 .swiper-wrapper .swiper-slide:nth-child(4) .img-box {
-  background: url(../images/img_science4.png);
-}
-
-.main .section3 .mySwiper4 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
-  background: url(../images/img_science1.png);
-}
-
-.main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
-  background: url(../images/img_insight1.png);
-}
-
-.main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(2) .img-box {
-  background: url(../images/img_insight2.png);
-}
-
-.main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(3) .img-box {
-  background: url(../images/img_insight3.png);
-}
-
-.main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(4) .img-box {
-  background: url(../images/img_insight4.png);
-}
-
-.main .section3 .mySwiper5 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
-  background: url(../images/img_insight1.png);
-}
-
-.main .section3 .mySwiper6 .swiper-wrapper .swiper-slide:nth-child(1) .img-box {
-  background: url(../images/img_vod1.png);
-}
-
-.main .section3 .mySwiper6 .swiper-wrapper .swiper-slide:nth-child(2) .img-box {
-  background: url(../images/img_vod2.png);
-}
-
-.main .section3 .mySwiper6 .swiper-wrapper .swiper-slide:nth-child(3) .img-box {
-  background: url(../images/img_vod3.png);
-}
-
-.main .section3 .mySwiper6 .swiper-wrapper .swiper-slide:nth-child(4) .img-box {
-  background: url(../images/img_vod4.png);
-}
-
-.main .section3 .mySwiper6 .swiper-wrapper .swiper-slide:nth-child(5) .img-box {
-  background: url(../images/img_vod1.png);
 }
 /*# sourceMappingURL=style.css.map */

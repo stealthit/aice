@@ -361,7 +361,7 @@ $gray_txt_3: #464646;
           gap: 50px;
 
           .grid-item {
-            @include set-images('ready',4);
+            // @include set-images('ready',4);
           }
         }
       }
@@ -451,17 +451,7 @@ $gray_txt_3: #464646;
     }      
   }  
   .section1 { 
-    .mySwiper1 {      
-      .swiper-wrapper {
-        .swiper-slide {
-          @include set-images('ready',4);
-          // swiper test
-          &:nth-child(5) .img-box {
-            background: url(../images/img_ready1.png);
-          }         
-        }
-      }
-    }
+    
   }
   .section2 {
     margin: 80px 0;
@@ -500,62 +490,7 @@ $gray_txt_3: #464646;
   .section3 {
     .section-content {      
       margin-bottom: 40px;      
-    }
-    .mySwiper2 {      
-      .swiper-wrapper {
-        .swiper-slide {          
-          @include set-images('ready',4);
-          // swiper test
-          &:nth-child(5) .img-box {
-            background: url(../images/img_ready1.png);
-          }
-        }
-      }
-    }
-    .mySwiper3 {      
-      .swiper-wrapper {
-        .swiper-slide {
-          @include set-images('exam',4);
-          // swiper test
-          &:nth-child(5) .img-box {
-            background: url(../images/img_exam1.png);
-          }
-        }
-      }
-    }
-    .mySwiper4 {      
-      .swiper-wrapper {
-        .swiper-slide {          
-          @include set-images('science',4);
-          // swiper test
-          &:nth-child(5) .img-box {
-            background: url(../images/img_science1.png);
-          }
-        }
-      }
-    }
-    .mySwiper5 {      
-      .swiper-wrapper {
-        .swiper-slide {
-          @include set-images('insight',4);
-          // swiper test
-          &:nth-child(5) .img-box {
-            background: url(../images/img_insight1.png);
-          }
-        }
-      }
-    }
-    .mySwiper6 {      
-      .swiper-wrapper {
-        .swiper-slide {
-          @include set-images('vod',4);
-          // swiper test
-          &:nth-child(5) .img-box {
-            background: url(../images/img_vod1.png);
-          }
-        }
-      }
-    }
+    }    
   }
 }
 
