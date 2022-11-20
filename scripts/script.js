@@ -51,10 +51,16 @@ function searchInputDelete() {
 }
 
 // circle progress bar
-function progress(bar, per) {
+function circleProgress(bar, per) {
   var progress = per / 100;
   var dashoffset = CIRCUMFERENCE * (1 - progress);    
   bar.style.strokeDashoffset = dashoffset;
   bar.style.strokeDasharray = CIRCUMFERENCE;    
 }
+
+function progress(bar, per) {
+  bar.css("width",per);
+}
+
+
 

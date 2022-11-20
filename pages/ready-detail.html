@@ -739,10 +739,10 @@
     var RADIUS = 23;
     var CIRCUMFERENCE = 2 * Math.PI * RADIUS;    
 
-    progress(bar1, 25);
-    progress(bar2, 0);
-    progress(bar3, 0);
-    progress(bar4, 0);
+    circleProgress(bar1, 25);
+    circleProgress(bar2, 0);
+    circleProgress(bar3, 0);
+    circleProgress(bar4, 0);
 
     $(".btn-recomment").on("click",function(){
       $(this).parent().siblings('.input-recomment').toggleClass('on');
