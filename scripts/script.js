@@ -32,6 +32,10 @@ $(".optionList .optionItem").on("click",function(){
   $(".sort-box").removeClass("open");
 })
 
+$(".modal-close").on("click", function(){
+  $(".modal-container").removeClass('show');
+})
+
 // input delete button
 function searchInputDelete() {
   const formSearchInput = document.querySelector('#search-text');
@@ -46,4 +50,11 @@ function searchInputDelete() {
   })
 }
 
+// circle progress bar
+function progress(bar, per) {
+  var progress = per / 100;
+  var dashoffset = CIRCUMFERENCE * (1 - progress);    
+  bar.style.strokeDashoffset = dashoffset;
+  bar.style.strokeDasharray = CIRCUMFERENCE;    
+}
 
