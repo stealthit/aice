@@ -1144,7 +1144,10 @@ $gray_txt_3: #464646;
               color: #9B9C9D;
             }
           }
-          .table-wrap {margin-top: 10px;}
+          .table-wrap {
+            margin-top: 10px;
+            tbody td {cursor: pointer;}
+          }
         }
       }
       &#d-mn03 {

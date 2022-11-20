@@ -1603,6 +1603,10 @@
   margin-top: 10px;
 }
 
+.detail-page .detail-content-wrap .detail-content#d-mn02 details .table-wrap tbody td {
+  cursor: pointer;
+}
+
 .detail-page .detail-content-wrap .detail-content#d-mn03 {
   background: #fff;
 }
