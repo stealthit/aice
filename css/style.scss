@@ -1,4 +1,5 @@
 // function ********************************
+
 $main-width: 1400px;
 // color
 $cl_pri: #003594;
@@ -1378,8 +1379,19 @@ $gray_txt_3: #464646;
     width: 583px;
     height: 658px;
 
+    input[type="date"]::-webkit-clear-button,
+    input[type="date"]::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      background: transparent;
+      z-index: 1;
+    }
+
     select,
     input[type="date"] {
+      position: relative;
       width: 256.5px;
       height: 50px;
       border: 1px solid #DDDDDD;
@@ -1396,7 +1408,10 @@ $gray_txt_3: #464646;
       padding: 0 20px;
       font-weight: 500;
       font-size: 16px;
-      color: #C1C1C1;
+
+      &::placeholder {
+        color: #C1C1C1;
+      }
     }
 
     select {
@@ -1430,6 +1445,20 @@ $gray_txt_3: #464646;
 
     .input-date-wrap {
       margin-bottom: 30px;
+
+      input::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        background: #fff url('../images/ic_input_date.png') center center /contain;
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+
+
     }
 
     .select-type-wrap {
@@ -1439,20 +1468,62 @@ $gray_txt_3: #464646;
       margin-bottom: 30px;
     }
 
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"]+label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      color: #464646;
+    }
+
+    input[type="checkbox"]+label>span.ico {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #E0DFDF;
+      border-radius: 4px;
+      background: #FFFFFF;
+      cursor: pointer;
+      margin-right: 10px;
+      background: url(../images/ic_check_before.png)no-repeat center;
+    }
+
+    input[type="checkbox"]:checked+label>span.ico {
+      background: url(../images/ic_check_after.png)no-repeat center;
+
+    }
+
+
     .checkbox-wrap {
       display: flex;
       align-items: center;
       gap: 50px;
       margin-bottom: 30px;
+
+
     }
 
     .modal-bottom {
       display: flex;
       align-items: center;
       gap: 10px;
-      div{
+
+      div {
         border-radius: 4px;
       }
+
       .btn-modal-cancle {
         width: 100%;
         background: #667D85;
@@ -1741,10 +1812,31 @@ $gray_txt_3: #464646;
   }
 
   .modal-copy-project {
+    width: 389px;
+    height: 344px;
     gap: 50px;
 
     .modal-body {
       gap: 20px;
+      font-weight: 500;
+      .msg-title{
+        width:100%;
+      }
+      select {
+        position: relative;
+        width: 329px;
+        height: 50px;
+        border: 1px solid #DDDDDD;
+        padding: 0 20px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #464646;
+        background: url(../images/ic_arrow_d.png)no-repeat right 20px center;
+      } 
+      
+    }
+    .modal-btn-group{
+      button{height:60px;}
     }
   }
 }

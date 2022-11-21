@@ -364,7 +364,7 @@
               </div>
               <!-- modal 오픈시 show 클래스 추가 -->
               <!-- <div class="modal-container show"> -->
-              <div class="modal-container show" style="margin-top: 400px">
+              <div class="modal-container show">
                 <div class="modal-search modal-content">
                   <div class="btn-ic-close modal-close"><img class="ic-close" alt=""></div>
                   <div class="modal-top">상세검색<button class="btn-reset">초기화</button></div>
@@ -380,29 +380,42 @@
                           <p class="search-tit">모델 유형</p>
                           <select name="" id="">
                             <option value="">선택</option>
+                            <option value="">Classfication(분류)</option>
+                            <option value="">Regression(회귀)</option>
+                            <option value="">Recommedation(추천)</option>
+                            <option value="">Clustering(군집)</option>
+                            <option value="">Text Analysis(테스트 분석)</option>
+                            <option value="">Computer Vision(영상 분석)</option>
+                            <option value="">기타</option>
                           </select>
                         </div>
                         <div>
                           <p class="search-tit">데이터 구분</p>
                           <select name="" id="">
-                            <option value="">선택</option>
+                            <option value="">전체</option>
+                            <option value="">Tabular</option>
+                            <option value="">이미지</option>
+                            <option value="">텍스트</option>
+                            <option value="">음성</option>
+                            <option value="">영상</option>
+                            <option value="">기타</option>
                           </select>
                         </div>
                       </div>
                       <p class="search-tit">VOD 속성</p>
                       <div class="checkbox-wrap">
                         <div class="checkbox-item">
-                          <i></i>
+                          
                           <input type="checkbox" name="" id="chk1">
-                          <label for="chk1">카테고리</label>
+                          <label for="chk1"><span class="ico"></span>카테고리</label>
                         </div>
                         <div class="checkbox-item">
                           <input type="checkbox" name="" id="chk2">
-                          <label for="chk2">과정</label>
+                          <label for="chk2"><span class="ico"></span>과정</label>
                         </div>
                         <div class="checkbox-item">
                           <input type="checkbox" name="" id="chk3">
-                          <label for="chk3">과목</label>
+                          <label for="chk3"><span class="ico"></span>과목</label>
                         </div>
                       </div>
                       <p class="search-tit">검색</p>
@@ -411,7 +424,7 @@
                   </div>
                   <div class="modal-bottom">
                     <div class="btn-modal-cancle">취소</div>
-                    <div class="btn-modal-confirm">확인</div>
+                    <div class="btn-modal-confirm">검색</div>
                   </div>
                 </div>
               </div>
