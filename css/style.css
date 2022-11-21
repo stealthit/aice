@@ -937,12 +937,6 @@
 .list-page .modal-search {
   width: 583px;
   height: 658px; }
-  .list-page .modal-search input[type="date"]::-webkit-clear-button,
-  .list-page .modal-search input[type="date"]::-webkit-inner-spin-button {
-    display: none; }
-  .list-page .modal-search input[type="date"]::-webkit-calendar-picker-indicator {
-    background: transparent;
-    z-index: 1; }
   .list-page .modal-search select,
   .list-page .modal-search input[type="date"] {
     position: relative;
@@ -985,16 +979,6 @@
     margin-bottom: 10px; }
   .list-page .modal-search .input-date-wrap {
     margin-bottom: 30px; }
-    .list-page .modal-search .input-date-wrap input::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      width: 24px;
-      height: 24px;
-      background: #fff url("../images/ic_input_date.png") center center/contain;
-      transform: translateY(-50%);
-      z-index: 0; }
   .list-page .modal-search .select-type-wrap {
     display: flex;
     align-items: center;
