@@ -64,4 +64,13 @@ function progress(bar, per) {
 }
 
 
-
+   /* 토글버튼 */
+   $(".switch_toggle").on("click", function () {
+    if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).find('input[type="hidden"]').val("N");
+    } else {
+        $(this).addClass("active");
+        $(this).find('input[type="hidden"]').val("Y");
+    }
+});
