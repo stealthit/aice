@@ -95,19 +95,18 @@
         </div>
         <main data-v-07af094e="" class="contentContainer">
           <!-- Start -- main 태그에 퍼블작업 나머지 태그는 고정 -->
-          <div class="wrapper">
-            <div class="quick-menu">
-              <ul>
-                <li>정기시험오리엔테이션</li>
-                <li>정기시험사전점검</li>
-                <li>FAQ</li>
-                <li>TOP</li>
-              </ul>
-            </div>            
-            <div class="main">
-              <div class="search-tit">
-                검색결과
-              </div>    
+          <div class="wrapper">          
+            <div class="data-sceince-main list-page">
+              <div class="intro">                  
+                <div class="intro-content">
+                  <div class="catg-desc">
+                    <div class="catg-title">Data Science</div>
+                    <div class="catg-txt1">다양한 데이터로부터 지식과 인사이트를 추출하는데 <br>
+                      필요한 융합분야를 배웁니다.</div>                  
+                  </div>
+                  <img src="../images/intro3.png" alt="">                
+                </div>                
+              </div>           
               <div class="search-wrap">
                 <form>
                   <div class="search-box">
@@ -119,7 +118,7 @@
                   </div>
                 </form>
                 <!-- <div class="search-word"> 검색워드 출력하지 않을때 search-word 에 on 제거-->
-                <div class="search-word on">
+                <div class="search-word">
                   <div class="word-item">javascript</div>
                   <div class="word-item">react</div>
                   <div class="word-item">node js</div>
@@ -129,7 +128,7 @@
                 <!-- 검색결과 영역 -->
                 <!-- <div class="search-result on"> 검색결과 건수 화면 출력시 result-count 에 on class 추가-->
                 <div class="search-result on">
-                  <div class="result-count on">
+                  <div class="result-count">
                     ‘<span>AI</span>’에 대한 검색 결과 <span>4</span>건
                   </div>                  
                   <!-- <div class="no-data on">  search data가 없을경우 no-data 에 on class 추가-->
@@ -138,7 +137,7 @@
                     검색 결과가 없습니다.
                   </div>
                   <!-- <div class="result-list on section"> 검색결과 출력시 result-list 에 on class 추가-->
-                  <div class="result-list on section">
+                  <div class="result-list on thumnbnail">
                     <div class="sort-box">
                       <div class="selected">
                         <div class="selected-value">조회순</div>
@@ -211,11 +210,148 @@
                           </div>
                         </div>
                       </div>
-                    </div>     
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready1.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 1. AI 이해 </div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">300</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-green">Basic</div>
+                            <div class="btn-type type2">No 코딩</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready2.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">3030</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-green">Basic</div>
+                            <div class="btn-type type2">No 코딩</div>                    
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready3.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">3030</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-red">Junior</div>
+                            <div class="btn-type type2">Python</div>                    
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready4.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">300</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-purple">Professional</div>
+                            <div class="btn-type type2">Python</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready1.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 1. AI 이해 </div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">300</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-green">Basic</div>
+                            <div class="btn-type type2">No 코딩</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready2.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 2. AIDU ez 기능 실습</div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">3030</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-green">Basic</div>
+                            <div class="btn-type type2">No 코딩</div>                    
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready3.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 3. 딥러닝의 동작 원리</div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">3030</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-red">Junior</div>
+                            <div class="btn-type type2">Python</div>                    
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_ready4.png'></div>
+                        <div class="desc-box">
+                          <div class="title">[AICE Basic] 4. 기업사례 실습</div>
+                          <ul class="count-line">
+                            <li><img class="ic-person" alt="">300</li>
+                            <li><img class="ic-heart" alt="">598</li>
+                            <li><img class="ic-comment" alt="">202</li>
+                          </ul>
+                          <div class="type-wrap">
+                            <div class="btn-type bg-purple">Professional</div>
+                            <div class="btn-type type2">Python</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <ul class="pagination">                    
+                      <li>
+                        <a href="#" class="left"><img class="ic-page-prev" alt="" /></a>
+                      </li>
+                      <li><a href="#" class="num">1</a></li>
+                      <li><a href="#" class="num active">2</a></li>
+                      <li><a href="#" class="num">3</a></li>
+                      <li><a href="#" class="num">4</a></li>
+                      <li><a href="#" class="num">5</a></li>
+                      <li><a href="#" class="num">6</a></li>
+                      <li><a href="#" class="num">7</a></li>
+                      <li><a href="#" class="num">8</a></li>
+                      <li><a href="#" class="num">9</a></li>
+                      <li><a href="#" class="num">10</a></li>
+                      <li>
+                        <a href="#" class="next"><img class="ic-page-next" alt="" /></a>
+                      </li>                      
+                    </ul>   
                   </div>
                 </div>
               </div>
-            
             </div>
           </div>
           <!-- End -- main 태그에 퍼블작업 나머지 태그는 고정 -->
@@ -251,9 +387,10 @@
   <script src="../scripts/jquery-ui.min.js"></script>  
   <script src="../scripts/swiper.min.js"></script>
   <script src="../scripts/script.js"></script>
-  <script>    
-    searchInputDelete();
-  
+  <script> 
+    $(".grid-item").on("click",function(){
+      location.href = "ready-detail.html";
+    })   
   </script>
 </body>
 </html>
