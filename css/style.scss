@@ -35,6 +35,13 @@ $gray_txt_3: #464646;
   width: 100%;
   text-align: initial;
 
+  .search-tit{
+    width:100%;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 30px;
+  }
   textarea {
     border: none;
     resize: none;
@@ -346,8 +353,9 @@ $gray_txt_3: #464646;
         width: 800px;
         margin: 0 auto;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 24px;
         color: $gray_txt_3;
+        text-align: center;
 
         &>span {
           color: #F83C4A
@@ -1819,9 +1827,11 @@ $gray_txt_3: #464646;
     .modal-body {
       gap: 20px;
       font-weight: 500;
-      .msg-title{
-        width:100%;
+
+      .msg-title {
+        width: 100%;
       }
+
       select {
         position: relative;
         width: 329px;
@@ -1832,11 +1842,14 @@ $gray_txt_3: #464646;
         font-size: 16px;
         color: #464646;
         background: url(../images/ic_arrow_d.png)no-repeat right 20px center;
-      } 
-      
+      }
+
     }
-    .modal-btn-group{
-      button{height:60px;}
+
+    .modal-btn-group {
+      button {
+        height: 60px;
+      }
     }
   }
 }
@@ -2265,5 +2278,89 @@ $gray_txt_3: #464646;
 
   .detail-content {
     background: #fff;
+  }
+}
+
+// 보고용 교육 등록
+
+.edu-main {
+  display: flex;
+
+  .side-wrap {
+    width: 250px;
+    height: 100vh;
+  }
+
+  .content-wrap {
+    width: 100%;
+    padding: 30px;
+
+    .table-wrap {
+      margin-top: 10px;
+
+      tbody td {
+        cursor: pointer;
+      }
+
+      .switch_toggle {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        border-radius: 15px;
+      }
+      .switch_toggle input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: solid 1px var(--upc-gray-200);
+        background-color: var(--upc-white);
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-color: var(--upc-gray);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+      input:checked + .slider {
+        background-color: var(--upc-black-200);
+      }
+      
+      input:focus + .slider {
+      }
+      input:checked + .slider:before {
+        -webkit-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        transform: translateX(30px);
+        background-color: var(--upc-white);
+      }
+      .slider.round {
+        border-radius: 15px;
+      }
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      .button-wrap{
+        .btn-retouch{
+          background: #667D85;
+        }
+        .btn-delete{
+          background: #003594;
+        }
+      }
+    }
   }
 }
