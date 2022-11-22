@@ -299,7 +299,7 @@
       width: 307px;
       height: 200px;
       overflow: hidden; }
-    .wrapper .thumnbnail .desc-box > .title {
+    .wrapper .thumnbnail .desc-box > .grid-title {
       margin-top: 30px;
       margin-bottom: 6px;
       font-weight: 500;
@@ -1539,13 +1539,11 @@
       display: flex;
       justify-content: space-between;
       gap: 10px; }
-      .practice-detail .project-container .project-content .table-wrap {
-        width: 800px; }
-        .practice-detail .project-container .project-content .table-wrap .ic-search-b {
-          margin: 0 auto; }
-        .practice-detail .project-container .project-content .table-wrap tbody tr td:first-child {
-          text-align: left;
-          padding-left: 20px; }
+      .practice-detail .project-container .project-content .table-wrap .ic-search-b {
+        margin: 0 auto; }
+      .practice-detail .project-container .project-content .table-wrap tbody tr td:first-child {
+        text-align: left;
+        padding-left: 20px; }
       .practice-detail .project-container .project-content .code-box {
         flex: 1;
         background: #464646;
