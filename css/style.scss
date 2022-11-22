@@ -470,7 +470,7 @@ $gray_txt_3: #464646;
         margin-top: 30px;
         margin-bottom: 6px;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 24px;
         color: $gray_txt_3;
       }
@@ -1353,7 +1353,12 @@ $gray_txt_3: #464646;
     }
   }
 }
+.data-sceince-main,.vod-main,.insight-main{
+  &.list-page .intro .intro-content img{
+    margin-top:0;
+  }
 
+}
 // thumbnail list page
 .list-page {
   .intro {
@@ -1463,6 +1468,8 @@ $gray_txt_3: #464646;
       font-size: 20px;
       color: #464646;
       margin-bottom: 10px;
+      text-align: left;
+      margin-top: 0;
     }
 
     .input-date-wrap {
@@ -2207,7 +2214,14 @@ $gray_txt_3: #464646;
     }
   }
 }
-
+.practice-main{
+  .modal-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .practice-detail {
   font-weight: 500;
   font-size: 20px;
@@ -2293,6 +2307,8 @@ $gray_txt_3: #464646;
   .detail-content {
     background: #fff;
   }
+
+ 
 }
 
 // 보고용 교육 등록
