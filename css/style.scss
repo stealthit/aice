@@ -1240,11 +1240,11 @@ $gray_txt_3: #464646;
     }
 
     .desc-box {
-      &>.title {
+      &>.grid-title {
         margin-top: 30px;
         margin-bottom: 6px;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 19px;
         line-height: 24px;
         color: $gray_txt_3;
       }
@@ -1975,7 +1975,7 @@ $gray_txt_3: #464646;
               flex-direction: column;
               gap: 20px;
 
-              .title {
+              .state-title {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 19px;
@@ -2254,7 +2254,7 @@ $gray_txt_3: #464646;
       line-height: 19px;
       color: #464646;
 
-      .title,
+      .pro-title,
       .content {
         min-height: 50px;
         border-bottom: 1px solid #DDDDDD;
@@ -2263,7 +2263,7 @@ $gray_txt_3: #464646;
         align-items: center;
       }
 
-      .title {
+      .pro-title {
         background: #F3F3F3;
       }
 

@@ -847,11 +847,11 @@
     width: 307px;
     height: 200px;
     overflow: hidden; }
-  .main .section .desc-box > .title {
+  .main .section .desc-box > .grid-title {
     margin-top: 30px;
     margin-bottom: 6px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 24px;
     color: #464646; }
   .main .section .desc-box .count-line {
@@ -1339,7 +1339,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px; }
-            .ready-player .player-wrapper .detail-content-wrap #d-mn03 .state-wrapper .state-list .state-item .title {
+            .ready-player .player-wrapper .detail-content-wrap #d-mn03 .state-wrapper .state-list .state-item .state-title {
               font-weight: 500;
               font-size: 16px;
               line-height: 19px;
@@ -1524,14 +1524,14 @@
       font-size: 16px;
       line-height: 19px;
       color: #464646; }
-      .practice-detail .project-container .grid-content .title,
+      .practice-detail .project-container .grid-content .pro-title,
       .practice-detail .project-container .grid-content .content {
         min-height: 50px;
         border-bottom: 1px solid #DDDDDD;
         padding: 0 20px;
         display: flex;
         align-items: center; }
-      .practice-detail .project-container .grid-content .title {
+      .practice-detail .project-container .grid-content .pro-title {
         background: #F3F3F3; }
       .practice-detail .project-container .grid-content .content {
         background: #fff; }
