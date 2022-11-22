@@ -466,7 +466,7 @@ $gray_txt_3: #464646;
     }
 
     .desc-box {
-      &>.title {
+      &>.grid-title {
         margin-top: 30px;
         margin-bottom: 6px;
         font-weight: 500;
@@ -2278,7 +2278,6 @@ $gray_txt_3: #464646;
       gap: 10px;
 
       .table-wrap {
-        width: 800px;
 
         .ic-search-b {
           margin: 0 auto;
