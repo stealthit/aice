@@ -1,9 +1,9 @@
 function init(){
-  $(".catg-menu li").on("mouseover",function () {
-    const tabId = $(this).attr("data-tab"); 
+  // $(".catg-menu li").on("mouseover",function () {
+  //   const tabId = $(this).attr("data-tab"); 
     
-    $("#" + tabId).addClass("active").siblings().removeClass('active');
-  })
+  //   $("#" + tabId).addClass("active").siblings().removeClass('active');
+  // })
   $(".tab-menu li").on("click",function () {
     const tabId = $(this).attr("data-tab"); 
     $(this).addClass('active').siblings().removeClass('active');  

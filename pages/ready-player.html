@@ -116,8 +116,8 @@
                 </div>
                 <ul class="player-menu detail-menu tab-menu">
                   <li class="active" data-tab="d-mn01"><img src="" alt="" class="ic-player-tmenu1 active"> 과정소개</li>
-                  <li data-tab="d-mn02"><img src="" alt="" class="ic-player-tmenu2">강의자료</li>
-                  <li data-tab="d-mn03"><img src="" alt="" class="ic-player-tmenu3">학습통계</li>
+                  <!-- <li data-tab="d-mn02"><img src="" alt="" class="ic-player-tmenu2">강의자료</li> -->
+                  <!-- <li data-tab="d-mn03"><img src="" alt="" class="ic-player-tmenu3">학습통계</li> -->
                 </ul>                          
                 <div class="detail-content-wrap">
                   <div class="detail-content active" id="d-mn01">
@@ -161,7 +161,7 @@
                       </div>
                     </div>                  
                   </div>
-                  <div class="detail-content" id="d-mn02">
+                  <!-- <div class="detail-content" id="d-mn02">
                     <div class="search-wrap small">
                       <form>
                         <div class="search-box">
@@ -259,8 +259,8 @@
                         </li>                      
                       </ul>   
                     </div>
-                  </div>
-                  <div class="detail-content" id="d-mn03">
+                  </div> -->
+                  <!-- <div class="detail-content" id="d-mn03">
                     <div class="state-wrapper">
                       <div class="state-title">VOD 수강현황</div>
                       <div class="state-list">
@@ -320,7 +320,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="player-list-wrapper open">
@@ -515,8 +515,8 @@
   <script src="../scripts/swiper.min.js"></script>
   <script src="../scripts/script.js"></script>
   <script>     
-  init();   
-    searchInputDelete();    
+    init();   
+    // searchInputDelete();    
     $(".btn-playlist-close").on("click",function(){
       $(".player-list-wrapper").removeClass("open");
       $(".player-wrapper").css("width","100%");
@@ -531,8 +531,7 @@
     var bar1 = document.querySelector('#bar1');
     var bar2 = document.querySelector('#bar2');
     var bar3 = document.querySelector('#bar3');    
-    var RADIUS = 23;
-    var CIRCUMFERENCE = 2 * Math.PI * RADIUS;    
+    var RADIUS = 23;    
 
     circleProgress(RADIUS, bar1, 25);
     circleProgress(RADIUS, bar2, 0);
