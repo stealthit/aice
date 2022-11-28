@@ -1130,6 +1130,7 @@ $gray_txt_3: #464646;
 
       .catg-content {
         position: relative;
+        overflow: hidden;
         height: 700px;
         width: $main-width;
         margin: 0 auto;
@@ -1418,6 +1419,7 @@ $gray_txt_3: #464646;
     background: #003594;
 
     .intro-content {
+      position: relative;
       height: 700px;
       width: $main-width;
       margin: 0 auto;
@@ -1445,8 +1447,27 @@ $gray_txt_3: #464646;
       }
 
       img {
+        position: absolute;
         max-width: 100%;
-        margin-top: 43px;
+        right: 0;
+        bottom: 0;
+      }
+      &#catg01 img {
+        // margin-top: -59px;
+        right: 26px;          
+      }
+      &#catg02 img {
+        // margin-top: -59px;
+        right: -100px;          
+      }
+      &#catg04 img {
+        // margin-top: -59px;
+        bottom: -77px;          
+      }
+
+      &#catg05 img {
+        top: -118px;
+        right: -104px;
       }
     }
   }
