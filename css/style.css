@@ -1387,6 +1387,10 @@
   border-left: 1px solid #1C508E;
 }
 
+.main .intro .catg-menu-wrap .catg-menu li:hover {
+  background: #0076FF;
+}
+
 .main .section {
   position: relative;
   width: 1400px;
