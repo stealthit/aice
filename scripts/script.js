@@ -36,6 +36,63 @@ function init(){
   $(".modal-close").on("click", function(){
     $(".modal-container").removeClass('show');
   })
+/* tab-change */
+$('.tab-change').each(function(){
+  var onIdx = $(this).find('li.on').index();
+  $(this).next().find('.tab-cont').eq(onIdx).addClass('on');
+  $(this).find('a').on('click', function(e){
+    var idx = $(this).parent().index();
+    $(this).parent().addClass('on').siblings().removeClass('on');
+    $(this).closest('.tab-change').next().find('.tab-cont').eq(idx).addClass('on').siblings().removeClass('on');
+    e.preventDefault();
+  });
+});
+
+/* tooltips */
+$('.btn-tooltips').on('click', function(e){
+  $(this).next().toggleClass('open')
+  e.preventDefault();
+});
+
+/* check박스가 있는경우 tr컬러지정 */
+$('.tbl-board').each(function(){
+  var chkbox = $(this).find('td input[type="checkbox"]');
+  if(chkbox.length > 0 && $('td .switch-button').length < 0){
+    $(this).find('tr input[type="checkbox"]').on('click', function(){
+      $(this).closest('tr').toggleClass('bg');
+      if($(this).closest('tr').hasClass('bg')){
+        $(this).prop('checked', true);
+      }else{
+        $(this).prop('checked', false);
+      };
+    });
+  };
+});
+
+
+
+/* 임시 : 위치 및 보기용 : 문제가 될수있으니 개발작업시 삭제 바람 */
+$(document).on('click', '[date-type*="popup-call"]', function(e){
+  var obj = $(this).attr('date-target');
+  popupOpen(obj);
+  $(obj).addClass('show');
+  e.preventDefault();
+});
+function popupOpen(obj){
+    var url = '../pages/popup_project_mypage.html';
+    $.get(url, function(data) {
+        if($(obj).length < 1){
+          $('.wrapper').append('<div class="popup-temp">' + data + '</div>');
+          var htmlcopy = $('.popup-temp').find(obj).clone();
+          $('.wrapper').append(htmlcopy);
+          $('.popup-temp').remove();
+          $(obj).find('.modal-close').on("click", function(){
+            $(this).closest(".modal-container").removeClass('show');
+          });
+        }
+    });
+  }
+/* 임시 : 위치 및 보기용 : 문제가 될수있으니 개발작업시 삭제 바람 */
 }
 
 // input delete button
