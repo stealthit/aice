@@ -110,12 +110,12 @@
                   <img class="ic-com-create"><span class="txt-r">프로젝트 만들기</span>
                 </a>
               </div><!-- //search-keyword-wrap -->
-              <ul class="tab-change">
-                <li class="on"><a href="#">내가 만든 프로젝트(2)</a></li>
-                <li><a href="#">내가 참여한 프로젝트</a></li>
+              <ul class="tab-change tab-menu">
+                <li class="active" data-tab="d-mn01"><a href="#">내가 만든 프로젝트(2)</a></li>
+                <li data-tab="d-mn02"><a href="#">내가 참여한 프로젝트</a></li>
               </ul>
-              <div class="tab-change-cont">
-                <div class="tab-cont">
+              <div class="detail-content-wrap">
+                <div class="detail-content active" id="d-mn01">
                   <ul class="box-lists">
                     <li class="flexbox">
                       <div class="left">
@@ -178,8 +178,8 @@
                       <a href="#" class="next"><img class="ic-page-next" alt="" /></a>
                     </li>                    
                   </ul>  
-                </div><!-- //tab-cont -->
-                <div class="tab-cont">
+                </div><!-- //detail-content -->
+                <div class="detail-content" id="d-mn02">
                   <ul class="box-lists">
                     <li class="flexbox">
                       <div class="left">
@@ -234,8 +234,8 @@
                       <a href="#" class="next"><img class="ic-page-next" alt="" /></a>
                     </li>                    
                   </ul>  
-                </div><!-- //tab-cont -->
-              </div><!-- //tab-change-cont -->
+                </div><!-- //detail-content -->
+              </div><!-- //detail-content-wrap -->
             </div><!-- //wrapper -->
           </div><!-- //wp-inner -->
           <!-- End -- main 태그에 퍼블작업 (AIDU실습 > 내가 만든 프로젝트) -->
@@ -273,6 +273,7 @@
   <script src="../scripts/swiper.min.js"></script>
   <script src="../scripts/script.js"></script>
   <script>
+    init(); 
     $(".grid-item").on("click", function () {
       location.href = "ready-detail.html";
     })   

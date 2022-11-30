@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../styles/ui.css">
   <link rel="stylesheet" href="../styles/font.css">
-  <link rel="stylesheet" href="../css/style.css">
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -95,122 +94,130 @@
           </div>
         </div>
         <main data-v-07af094e="" class="contentContainer">
-          <!-- Start -- main 태그에 퍼블작업 (AIDU실습 > 내가 만든 프로젝트 > 분석IDE) -->
-          <div class="wrapper projcet-sub">
-            <div class="wp-inner">
-              <div class="titarea1">
-                <h2 class="tit">내가 만든 프로젝트</h2>
-                <div class="sort-box">
-                    <div class="selected">
-                      <div class="selected-value">프로젝트 바로가기</div>
-                      <div class="ic-arrow"></div>
+          <!-- Start -- main 태그에 퍼블작업 나머지 태그는 고정 -->
+          <div class="wrapper">          
+            <div class="data-sceince-main list-page">
+              <div class="intro">                  
+                <div class="intro-content" id="catg03" style="height:500px;">
+                  <div class="catg-desc">
+                    <div class="catg-title">Data Science</div>
+                    <div class="catg-txt1">다양한 데이터로부터 지식과 인사이트를 추출하는데 <br>
+                      필요한 융합분야를 배웁니다.</div>                  
+                  </div>
+                  <img src="../images/intro3_500.png" alt="">                
+                </div>                
+              </div>           
+              <div class="search-wrap">
+                <form>
+                  <div class="search-box">
+                    <input type="text" name="" id="search-text" placeholder="원하는 강의를 찾아보세요." autocomplete="off">
+                    <button type="reset" class="btn-input-delete">
+                      <img class="ic-delete" />
+                    </button>
+                    <div class="ic-search"></div>
+                  </div>
+                </form>
+                <!-- <div class="search-word"> 검색워드 출력하지 않을때 search-word 에 on 제거-->
+                <div class="search-word">
+                  <div class="word-item">javascript</div>
+                  <div class="word-item">react</div>
+                  <div class="word-item">node js</div>
+                  <div class="word-item">exeress</div>
+                  <div class="word-item">exeress</div>
+                </div>
+                <!-- 검색결과 영역 -->
+                <!-- <div class="search-result on"> 검색결과 건수 화면 출력시 result-count 에 on class 추가-->
+                <div class="search-result on">
+                  <div class="result-count">
+                    ‘<span>AI</span>’에 대한 검색 결과 <span>4</span>건
+                  </div>                  
+                  <!-- <div class="no-data on">  search data가 없을경우 no-data 에 on class 추가-->
+                  <div class="no-data">
+                    <div class="ic-error"></div>
+                    검색 결과가 없습니다.
+                  </div>
+                  <!-- <div class="result-list on section"> 검색결과 출력시 result-list 에 on class 추가-->
+                  <div class="result-list on thumnbnail">
+                    <div class="sort-box">
+                      <div class="selected">
+                        <div class="selected-value">최신순</div>
+                        <div class="ic-arrow"></div>
+                      </div>                      
+                      <ul class="optionList">
+                        <li class="optionItem sel">최신순</li>
+                        <li class="optionItem">조회순</li>                        
+                      </ul>
                     </div>
-                    <ul class="optionList">
-                      <li class="optionItem">프로젝트_1</li>
-                      <li class="optionItem sel">프로젝트_2</li>
-                      <li class="optionItem">프로젝트_3</li>
-                    </ul>
-                  </div><!-- //sort-box -->
-              </div><!-- //titarea1 -->
-              <div class="content-inner">
-                <div class="titarea2">
-                  <h3 class="tit">프로젝트명</h3>
-                </div><!-- //titarea2 -->
-                <ul class="tab-change">
-                  <li><a href="#">기본정보</a></li>
-                  <li><a href="#">프로젝트 멤버</a></li>
-                  <li><a href="#">데이터 관리</a></li>
-                  <li><a href="#">소스 Viewer</a></li>
-                  <li class="on"><a href="#">분석 IDE</a></li>
-                  <li><a href="#">모델학습</a></li>
-                  <li><a href="#">공유모델</a></li>
-                </ul>
-                <div class="tab-inner">
-                  <div class="top-txt">
-                    AI 분석을 위한 개발 환경을 구성합니다
-                    <div class="tooltips" data-tooltip="right">
-                      <a href="#" class="btn-tooltips"><img class="ic-com-tooltip" alt="툴팁"></a>
-                      <div class="tooltips-cont">
-                        <ul class="list-sty sty1">
-                          <li>※ IDE 연결 전 팝업차단이 해제되어 있는지 확인해주세요.</li>
-                          <li>※ IDE를 종료해도 저장하신 파일들은 모두 보존되며 IDE를 다시 실행하면 이어서 작업하실 수 있습니다.</li>
-                        </ul>
+                    <div class="grid-box">
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_science1.png'></div>
+                        <div class="desc-box">
+                          <div class="grid-title">Data Science 과정 </div>                          
+                          <ul class="type-wrap">
+                            <li class="btn-type bg-yel">Future</li>
+                            <li class="btn-type type2">Python</li>
+                            <li><img class="ic-view" alt="">3030</li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                  </div><!--//top-txt -->
-                  <div class="ctrl-info right">
-                    <div class="btn-area">
-                      <button type="button" class="btn-sty sty3 sizeSm">JupyterLab 빠른 생성</button>
-                      <button type="button" class="btn-sty sty3 sizeSm">AIDU ez 빠른 생성</button>
-                      <button type="button" class="btn-sty sty3 sizeSm">IDE 상세 실행</button>
-                    </div>
-                  </div><!-- //titarea2 -->
-                  <div class="splitbox">
-                    <div class="left-area">
-                      <table class="tbl tbl-board">
-                        <colgroup>
-                          <col style="width:100px">
-                          <col style="width:auto">
-                          <col style="width:410px">
-                          <col style="width:100px">
-                          <col style="width:200px">
-                          <col style="width:100px">
-                        </colgroup>
-                        <thead>
-                          <th scope="col">작업 ID</th>
-                          <th scope="col">이미지 정보</th>
-                          <th scope="col">시스템 리소스</th>
-                          <th scope="col">멤버명</th>
-                          <th scope="col">남은시간/할당시간</th>
-                          <th scope="col">기능</th>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>68253</td>
-                            <td class="al">Tensorflow 2.4.2 with</td>
-                            <td class="al">CPU : 1Core / Memory : 4GB</td>
-                            <td>홍길동</td>
-                            <td>7h 56m / 7h 56m</td>
-                            <td>
-                              <label class="switch-button">
-                                <input type="checkbox" class="frm-swc"/>
-                                <div class="toggle-control"></div>
-                              </label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="6" class="nodata">
-                              upyterLab 1개 EZ 1개가 생성 가능합니다.
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div><!--//left-area-->
-                  </div><!-- //splitbox-->
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" class="left"><img class="ic-page-prev" alt="" /></a>
-                    </li>
-                    <li><a href="#" class="num">1</a></li>
-                    <li><a href="#" class="num active">2</a></li>
-                    <li><a href="#" class="num">3</a></li>
-                    <li><a href="#" class="num">3</a></li>
-                    <li><a href="#" class="num">4</a></li>
-                    <li><a href="#" class="num">5</a></li>
-                    <li><a href="#" class="num">6</a></li>
-                    <li><a href="#" class="num">7</a></li>
-                    <li><a href="#" class="num">8</a></li>
-                    <li><a href="#" class="num">9</a></li>
-                    <li><a href="#" class="num">10</a></li>
-                    <li>
-                      <a href="#" class="next"><img class="ic-page-next" alt="" /></a>
-                    </li>                    
-                  </ul>  
-                </div><!-- //tab-inner-->
-              </div><!-- //content-inner -->
-            </div><!-- //wp-inner -->
-          </div><!-- //wrapper -->
-          <!-- End -- main 태그에 퍼블작업 (AIDU실습 > 내가 만든 프로젝트 > 분석IDE) -->
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_science2_d.png'></div>
+                        <div class="desc-box">
+                          <div class="grid-title">Data Science 과정 1</div>                          
+                          <ul class="type-wrap">
+                            <li class="btn-type bg-green">Associate</li>
+                            <li class="btn-type type2">Python</li>   
+                            <li><img class="ic-view" alt="">3030</li>                 
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_science3.png'></div>
+                        <div class="desc-box">
+                          <div class="grid-title">Data Science 과정</div>                         
+                          <ul class="type-wrap">
+                            <li class="btn-type bg-red">Junior</li>
+                            <li class="btn-type type2">Python</li> 
+                            <li><img class="ic-view" alt="">3030</li>                   
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                        <div class="img-box"><img src='../images/img_science4_d.png'></div>
+                        <div class="desc-box">
+                          <div class="grid-title">Data Science 과정 2</div>                          
+                          <ul class="type-wrap">
+                            <li class="btn-type bg-blue">Associate</li>
+                            <li class="btn-type type2">Python</li>
+                            <li><img class="ic-view" alt="">3030</li>
+                          </ul>
+                        </div>
+                      </div>                      
+                    </div>  
+                    <ul class="pagination">                    
+                      <li>
+                        <a href="#" class="left"><img class="ic-page-prev" alt="" /></a>
+                      </li>
+                      <li><a href="#" class="num">1</a></li>
+                      <li><a href="#" class="num active">2</a></li>
+                      <li><a href="#" class="num">3</a></li>
+                      <li><a href="#" class="num">4</a></li>
+                      <li><a href="#" class="num">5</a></li>
+                      <li><a href="#" class="num">6</a></li>
+                      <li><a href="#" class="num">7</a></li>
+                      <li><a href="#" class="num">8</a></li>
+                      <li><a href="#" class="num">9</a></li>
+                      <li><a href="#" class="num">10</a></li>
+                      <li>
+                        <a href="#" class="next"><img class="ic-page-next" alt="" /></a>
+                      </li>                      
+                    </ul>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End -- main 태그에 퍼블작업 나머지 태그는 고정 -->
         </main>
         <div data-v-07af094e="" id="footer" class="footer">
           <div class="footerConTopWrap">
@@ -239,13 +246,13 @@
       </div>
     </div>
   </div>
-    
   <script src="../scripts/jquery-3.6.0.min.js"></script>
-  <script src="../scripts/jquery-ui.min.js"></script>
+  <script src="../scripts/jquery-ui.min.js"></script>  
   <script src="../scripts/swiper.min.js"></script>
   <script src="../scripts/script.js"></script>
-  <script>
-    $(".grid-item").on("click", function () {
+  <script> 
+  init();
+    $(".grid-item").on("click",function(){
       location.href = "ready-detail.html";
     })   
   </script>

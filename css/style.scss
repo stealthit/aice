@@ -3,6 +3,7 @@
 $trs-rotate-180 :rotate(180deg);
 $trs-all:all .3s;
 $main-width: 1400px;
+
 // color
 $cl_pri: #003594;
 $cl_pri_2: #0076FF;
@@ -3162,6 +3163,14 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       margin-left:10px;
     }
   }
+  .detail-content-wrap{
+    .detail-content{
+      display:none;
+      &.active{
+        display:block;
+      }
+    }
+  }
 }
 //form style
 .frm-wrap{
@@ -3264,31 +3273,11 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 /* tbl-board */
 .tbl-board{
   table-layout:fixed;
-  border-bottom:1px solid $gray_bd;
-  thead{
-    th{
-      @include defaultFont;
-      font-weight:500;
-      background:$gray_bg;
-      border-top:1px solid $gray_txt_3;
-      height:50px;
-      color:$gray_txt_3;
-    }
-  }
   tbody{
     tr{
-      &.bg{
-        background-color:$gray_bg
-      }
       td{
-        @include defaultFont;
-        text-align:center;
-        border-top:1px solid $gray_bd;
-        height:50px;
-        color:$gray_txt_3;
-        padding:8px 20px;
         &.al{
-          text-align:left;
+          text-align:left !important;
         }
         .subject{
           @include flexbox;
@@ -3386,12 +3375,12 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     &:first-child{
       border-left:1px solid $gray_bd;
     }
-    &.on:first-child{
+    &.active:first-child{
       a{
         margin-left:0;
       }
     }
-    &.on{
+    &.active{
       a{
         background-color:$white;
         color:$gray_txt_3;
@@ -3403,11 +3392,12 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     }
   }
   &.tab-sty2{
+    margin-bottom:0;
     li{
       a{
         border:1px solid $gray_bd;
       }
-      &.on{
+      &.active{
         a{
           background-color:$gray_txt_3;
           border-color:$gray_txt_3;
@@ -3417,14 +3407,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     }
   }
 }
-.tab-change-cont{
-  .tab-cont{
-    display:none;
-    &.on{
-      display:block;
-    }
-  }
-}
+
 /* search-keyword */
 .search-keyword-wrap{
   @include flexbox;
@@ -3587,11 +3570,10 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 }
 //switch-toggle
 .switch-button{
-  $trs-cub:all .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
   display:inline-block;
   vertical-align:middle;
   .toggle-control{
-      transition:$trs-cub;
+      transition:$trs-all;
       width:40px;
       height:24px;
       display:block;
@@ -3599,7 +3581,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       background-color:$gray_txt_4;
       position:relative;
       &:after{
-        transition:$trs-cub;
+        transition:$trs-all;
         content:"";
         width:20px;
         height:20px;
@@ -3693,10 +3675,14 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 }
 /* 분석IDE */
 .cont-ide{
-  .logo-info-box{
+  > .logo-info-box{
     @include flexbox;
     border-top:1px solid $gray_txt_3;
     border-bottom:1px solid $gray_txt_4;
+    margin-top:30px;
+    &.col3{
+      width:420px;
+    }
     > li{
       @include flexbox;
       flex:1;
@@ -3707,6 +3693,50 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       .logoimg{
         width:200px;
         text-align:center;
+      }
+    }
+    &.box2{
+      flex-wrap: wrap;
+      font-size: 20px;
+      line-height: 24px;
+      > li{
+        flex-direction: column;
+        flex:auto;
+        padding:20px 0;
+      }
+      .status{
+          @include flexbox;
+          width:100%;
+          margin-top:20px;
+        > li{
+          position:relative;
+          text-align:center;
+          flex:1;
+          &:before{
+            content:'';
+            height:20px;
+            background-color:$gray_txt_4;
+            width:1px;
+            position: absolute;
+            right:0;
+            top:50%;
+            transform:translateY(-50%);
+          }
+          .num{
+            display:block;
+            margin-bottom:7px;
+            font-weight:600;
+            font-size:20px;
+            line-height:24px;
+            color:$cl_pri_2;
+          }
+          .txt{
+            display:block;
+            font-size:14px;
+            line-height:17px;
+            color:$gray_txt_3;
+          }
+        }
       }
     }
     .logo-info{
@@ -3722,18 +3752,6 @@ $gray_txt_4:#E0DFDF; /* 추가 */
         @include defaultFont;
         color:$gray_txt_2;
       }
-    }
-    &.half{
-      width:50%;
-      li{
-        padding:24px 0;
-      }
-      .status-support{
-        width:100%;
-      }
-    }
-    &.wid1{
-      width:920px;
     }
   }
   .btn-area{
