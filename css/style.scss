@@ -17,7 +17,7 @@ $cl_yel: #FF6700;
 
 $white: #fff;
 $gray_bg: #f3f3f3;
-$gray_bd: #9B9C9D;
+$gray_bd: #DDDDDD;
 $gray_txt_1: #C1C1C1;
 $gray_txt_2: #9B9C9D;
 $gray_txt_3: #464646;
@@ -35,7 +35,10 @@ $gray_txt_4:#E0DFDF; /* 추가 */
   justify-content:space-between;
   align-items:center;
   &.right{
-    justify-content:flex-end
+    justify-content:flex-end;
+  }
+  &.start {
+    justify-content: flex-start;
   }
 }
 @mixin defaultFont {
@@ -829,6 +832,21 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 }
 
 // icon
+.ic-folder-open {
+  content: url(../images/ic-folder-o.png);
+  width: 20px;
+  height: 20px;
+}
+.ic-folder-close {
+  content: url(../images/ic-folder-c.png);
+  width: 20px;
+  height: 20px;
+}
+.ic-tb-arrow {
+  content: url(../images/ic-tb-arrow.png);
+  width: 14px;
+  height: 14px;
+}
 .ic-close {
   content: url(../images/ic_close.png);
   width: 26px;
@@ -1139,6 +1157,11 @@ $gray_txt_4:#E0DFDF; /* 추가 */
   width:22px;
   height:22px;
 }
+.ic-smenu-arrow{
+  content:url(../images/ic-smenu-arrow.png);
+  width:22px;
+  height:22px;
+}
 .ic-com-write{
   content:url(../images/icon_com_write.png);
   width:25px;
@@ -1383,7 +1406,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
         &#catg05 img {
           top: -118px;
           right: -104px;
-        }
+        }      
       }
     }
 
@@ -1433,138 +1456,34 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       }
     }
   }
-
-  .section {
-    position: relative;
-    width: $main-width;
-    margin: 0 auto;
-
-    .section-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 30px;
-
-      .section-title {
-        display: flex;
-        align-items: flex-end;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 36px;
-        color: $gray_txt_3;
-
-        .ic-more {
-          cursor: pointer;
-          margin-left: 20px;
-        }
-      }
-
-      .arrow-group {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-      }
-    }
-
-    .img-box {
-      // width: 307px;
-      // height: 200px;
-      overflow: hidden;
-    }
-
-    .desc-box {
-      &>.grid-title {
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: $gray_txt_3;
-      }
-
-      .count-line {
-        display: flex;
-        align-items: center;
-        gap: 21px;
-        margin-bottom: 6px;
-
-        li {
-          display: flex;
-          gap: 8px;
-        }
-      }
-
-      .type-wrap {
-        display: flex;
-        gap: 10px;
-
-        li {display: flex;gap: 6px;align-items: center;}
-        .btn-type {
-          padding: 8px 12px;
-          height: 33px;
-          border-radius: 6px;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 17px;
-          color: #FFFFFF;
-        }
-
-        .type2 {
-          color: $gray_txt_3;
-          background: $gray_bg;
-        }
-      }
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      position: initial;
-      width: 32px;
-      height: 32px;
-
-      &::after {
-        width: 32px;
-        height: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #E0DFDF;
-        color: $gray_txt_2;
-        font-size: 12px;
-        font-weight: bold;
-
-      }
-    }
-  }
-
   .section2 {
     margin: 80px 0;
     height: 260px;
     background: #0076FF;
-
+  
     .banner-wrap {
       margin: 0 auto;
       width: $main-width;
       display: flex;
       justify-content: space-between;
-
+  
       .banner-txt {
         display: flex;
         flex-direction: column;
         font-weight: 600;
         margin-top: 60px;
         color: #fff;
-
+  
         .banner-title {
           margin-bottom: 14px;
           font-size: 35px;
         }
-
+  
         .banner-desc {
           margin-bottom: 28px;
           font-size: 16px;
         }
-
+  
         .banner-shortcut {
           cursor: pointer;
           font-size: 20px;
@@ -1573,20 +1492,125 @@ $gray_txt_4:#E0DFDF; /* 추가 */
           align-items: center;
         }
       }
-
+  
       &>img {
         max-width: 100%;
         margin-top: -23px;
       }
     }
   }
-
+  
   .section3 {
     .section-content {
       margin-bottom: 40px;
     }
   }
 }
+.section {
+  position: relative;
+  width: $main-width;
+  margin: 0 auto;
+
+  .section-top {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+
+    .section-title {
+      display: flex;
+      align-items: flex-end;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: $gray_txt_3;
+
+      .ic-more {
+        cursor: pointer;
+        margin-left: 20px;
+      }
+    }
+
+    .arrow-group {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+  .img-box {
+    // width: 307px;
+    // height: 200px;
+    overflow: hidden;
+  }
+
+  .desc-box {
+    &>.grid-title {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $gray_txt_3;
+    }
+
+    .count-line {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+      margin-bottom: 6px;
+
+      li {
+        display: flex;
+        gap: 8px;
+      }
+    }
+
+    .type-wrap {
+      display: flex;
+      gap: 10px;
+
+      li {display: flex;gap: 6px;align-items: center;}
+      .btn-type {
+        padding: 8px 12px;
+        height: 33px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+      }
+
+      .type2 {
+        color: $gray_txt_3;
+        background: $gray_bg;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: initial;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #E0DFDF;
+      color: $gray_txt_2;
+      font-size: 12px;
+      font-weight: bold;
+
+    }
+  }
+}
+
+
 .data-sceince-main,.vod-main,.insight-main{
   &.list-page .intro .intro-content img{
     // margin-top:0;
@@ -1611,6 +1635,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
         font-weight: 600;
         color: #FFFFFF;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+        z-index: 1;
 
         .catg-title {
           font-size: 45px;
@@ -1648,6 +1673,10 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       &#catg05 img {
         top: -118px;
         right: -104px;
+      }
+
+      &#catg06 img {          
+        bottom: 35px;
       }
     }
   }
@@ -2592,6 +2621,113 @@ $gray_txt_4:#E0DFDF; /* 추가 */
   }
 }
 .practice-main{
+  display: flex;
+  flex-direction: column;  
+  .matrix-box {
+    margin: 0 auto;
+    width: $main-width;
+    display: flex;
+    flex-direction: column;
+
+    .matrix-top {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $gray_txt_2;
+      margin-bottom: 45px;
+
+      .matrix-tit {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: $gray_txt_3;
+      }
+    }
+    
+    .matrix-wrap {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $gray_txt_2;
+
+      .tab-menu-wrap {
+        display: flex;
+        height: 60px;
+        margin-bottom: 30px;
+        .menu-blank {
+          width: 275px;
+          border-bottom: 1px solid $gray_txt_3;
+        }
+        .matrix-tab {
+          flex: 1;
+          height: 60px;    
+          display: flex;
+          align-items: center;
+          & > li {
+            cursor: pointer;
+            height: 60px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $gray_bg;
+            border-top: 1px solid $gray_txt_4;
+            border-bottom: 1px solid $gray_txt_3;
+            &:not(:first-child) {border-left: 1px solid $gray_txt_4;}   
+            &.active {
+              background: #fff;
+              color: $gray_txt_3;
+              border: 1px solid $gray_txt_3;
+              border-bottom: 1px solid #fff;
+            }       
+          }
+        }  
+      }
+
+      .matrix-content {
+        display: flex;        
+
+        .matrix-smenu {
+          display: flex;
+          flex-direction: column;
+          width: 245px;
+          margin-top: 66px;
+          margin-right: 30px;
+
+          & > li {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;;
+            flex: 1;
+            border-bottom: 1px solid $gray_txt_4;
+
+            &.active {
+              color: $gray_txt_3;
+              &:before{
+                content:url(../images/ic-smenu-arrow.png);
+                width:22px;
+                height:22px;
+                position:absolute;
+                right:0;
+                top:50%;
+                transform:translateY(-50%);
+                transition:right 0.3s;
+              } 
+            }            
+          }
+        }
+        .smenu-content {
+          width: 1125px !important;          
+        }
+      }
+    }
+
+  }
   .modal-container{
     position: fixed;
     top: 50%;
@@ -2966,6 +3102,9 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 .flexbox{
   @include flexbox;
 }
+.gap10 {gap: 10px;}
+.gap30 {gap: 30px;}
+.mt30 {margin-top: 30px;}
 /* title */
 .titarea1{
   @include flexbox;
@@ -3064,6 +3203,11 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     font-size:16px;
     height:40px;
   }
+  &.sizeMl{
+    font-size:16px;
+    height:50px;
+    min-width:56px;
+  }
   &.sizeL{
     font-size:20px;
     height:60px;
@@ -3077,7 +3221,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 .projcet-main{
   .projcet-vis{
     background-color:$cl_pri;
-    height:500px;
+    height:700px;
     color:$white;
     .wp-inner{
       padding-top:0;
@@ -3213,9 +3357,23 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     height:20px;
     background:$white url(../images/icon_checkbox.png) no-repeat 50% 50%;
     &:checked{
-      background-color:$cl_pri;
+      background-color:$cl_pri_2;
       background-image:url(../images/icon_checkbox_on.png);
       border:none;
+    }
+  }
+}
+.frm-rd-lb{
+  .frm-rd{
+    appearance:none;
+    border:1px solid $gray_txt_4;
+    border-radius:30px;
+    width:20px;
+    height:20px;
+    background:$white url(../images/icon_radio.png) no-repeat 3px 3px;
+    &:checked{
+      border:1px solid $cl_pri_2;      
+      background:$white url(../images/icon_radio_on.png) no-repeat 3px 3px;
     }
   }
 }
@@ -3764,10 +3922,19 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 }
 
 /*** modal-popup ***/
-.modal-container{
+.modal-container.page2{
   &.page2{
     .modal-content{
       width:600px;
+    }
+    .modal-data-catg {
+      width: 1200px;
+    }
+    .modal-create-code {
+      width: 1400px;      
+    }
+    .modal-sel-exe {
+      width: 900px;
     }
   }
   &.alert{
@@ -3786,7 +3953,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     &.flexbox{
       [class*="btn-"]{
        flex:1;
-       
+       cursor: pointer;
       }
     }
   }
@@ -3826,7 +3993,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
   .frm-inp{
     height:50px;
     flex:1;
-  }
+  }gray_bg
   .modal-body{
     .btn-sty{
       margin-left:10px;
@@ -3885,5 +4052,170 @@ $gray_txt_4:#E0DFDF; /* 추가 */
         line-height:17px;
       }
     }
+  }
+}
+.modal-data-catg {
+  .frm-inp{
+    height:50px;
+    flex:1;
+  }
+  .table-wrap {
+    flex: 1;
+    height: 300px;
+    overflow: auto;
+  }
+  .assort-box {
+    thead th {
+      padding: 0 20px;
+      .ic-folder-open {margin-right: 10px;}
+    }
+    tbody tr td {
+      padding: 0 30px;
+      .ic-folder-close {
+        margin-left: 4px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.modal-create-code {
+  .code-tit {
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;    
+  }
+  .code-desc {
+    font-size: 16px;
+    color: $gray_txt_2;
+  }
+  .modal-only-area {
+    margin-top: 0 !important;
+    .frm-inp {height: 50px !important;}    
+  }
+  .modal-body {gap: 30px;}
+  .table-wrap {
+    overflow: auto;    
+    width: 100%;
+
+    &.h200 {height: 200px;}
+    &.h250 {height: 250px;}
+    .custom-select {
+      height: 34px;
+      width: 115px;    
+      padding: 0 10px;  
+      background:#fff url(../images/ic_tb_selarrow_d.png) no-repeat right 10px center;      
+    }
+  }
+  .data-info-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.md-flex-row {  
+  font-size: 16px;
+  display: flex;  
+  width: 100%;
+  height: 50px;
+  &:first-child{ border-top: 1px solid $gray_txt_3;}
+  .flex-tit {
+    border-bottom: 1px solid $gray_bd;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+    background: $gray_bg;    
+  }
+  .flex-desc {
+    border-bottom: 1px solid $gray_bd;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    flex: 1;   
+    
+    .modal-only-area .frm-inp{
+      height: 34px !important;
+    }  
+    .customizing input[type=range] {
+      appearance: none;
+      width: 260px;
+      height: 1px;
+      // accent-color: $cl_pri_2;
+      margin-right: 10px;
+  }
+  .customizing  input[type=range]:focus {
+      outline: none;
+  }
+  /*webkit (Chrome)의 경우*/
+  .customizing input[type=range]::-webkit-slider-runnable-track {
+      width: 260px;
+      height: 1px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: #E0DFDF;
+  }
+  .customizing input[type=range]::-webkit-slider-thumb {      
+      height: 12px;
+      width: 12px;
+      background: $cl_pri_2;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -5px; /*chrome의 경우 margin-top값을 부여해야합니다.*/
+  }
+  .customizing input[type=range]:focus::-webkit-slider-runnable-track {
+      background: #2497E3; /*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+  }
+  /*Firefox의 경우*/
+  .customizing input[type=range]::-moz-range-track {
+      width: 260px;
+      height: 5px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: #2497E3;
+  }
+  .customizing input[type=range]::-moz-range-thumb {      
+      height: 12px;
+      width: 12px;
+      background: $cl_pri_2;
+      cursor: pointer;
+  }
+  /*IE의 경우*/
+  .customizing input[type=range]::-ms-track {
+      width: 260px;
+      height: 5px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+  }
+  .customizing input[type=range]::-ms-fill-lower {
+      background: #2497E3;
+  }
+  .customizing input[type=range]::-ms-fill-upper {
+      background: #2497E3;
+  }
+  .customizing input[type=range]::-ms-thumb {
+      margin-top: 1px;      
+      height: 12px;
+      width: 12px;
+      background: $cl_pri_2;
+      cursor: pointer;
+  }
+  .customizing input[type=range]:focus::-ms-fill-lower {
+      background: #2497E3;/*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+  }
+  .customizing input[type=range]:focus::-ms-fill-upper {
+      background: #2497E3; /*네모버튼에 포커스를 줬을때 뒤에 라인(ㅡ)의 효과*/
+  }  
+  }
+}
+
+.modal-sel-exe {
+  .filepath {
+    font-size: 16px;
+    line-height: 19px;
+    .filename {color: $gray_txt_2;}
   }
 }

@@ -12,6 +12,10 @@ function init(){
     $("#" + tabId).addClass("active").siblings().removeClass('active');
   })
   
+  $(".btn-tab li").on("click",function() {
+    $(this).addClass('active').siblings().removeClass('active');    
+  })
+
   $(".search-box input").on("focus",function(){
     $(this).parent(".search-box").css('background', '#fff');
     $(this).parent(".search-box").css('border-color', '#003594');
@@ -94,6 +98,7 @@ function popupOpen(obj){
   }
 /* 임시 : 위치 및 보기용 : 문제가 될수있으니 개발작업시 삭제 바람 */
 }
+
 
 // input delete button
 function searchInputDelete() {

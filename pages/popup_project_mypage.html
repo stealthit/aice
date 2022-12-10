@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="../styles/ui.css">
   <link rel="stylesheet" href="../styles/font.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link
+  <!-- <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
+/> -->
   <style>
-    .wrapper .modal-container.page2{position:relative;transform:translate(0, 0);margin-bottom: 30px}
+    .wrapper .modal-container.page2{position:relative;transform:translate(-50%, 0);margin-bottom: 30px}
   </style>
 </head>
 <body>  
@@ -257,6 +257,702 @@
 
             <!--------------- POPUP_alert -------------->
 
+            <!-- //POPUP_confirm_확인 -->
+            <div class="modal-container page2 confirm show" id="popup-confirm"><!-- modal 오픈시 show 클래스 추가 -->
+              <div class="modal-copy-project modal-content">
+                <div class="btn-ic-close modal-close"><img class="ic-close" alt=""></div>
+                <div class="modal-top">확인 메시지</div>
+                <div class="modal-body">
+                  <p class="confirm-msg">이메일 주소를 확인해주세요</p>
+                </div>
+                <div class="modal-bottom flexbox">                  
+                  <div class="btn-modal-confirm btn-sty sty4 sizeL">확인</div>
+                </div>
+              </div>
+            </div>
+            <!-- //POPUP_confirm_확인 -->
+
+            <!-- POPUP_데이터 카탈로그_확인 -->
+            <div class="modal-container page2 show">
+              <div class="modal-data-catg modal-content">
+                <div class="btn-ic-close modal-close"><img class="ic-close" alt=""></div>
+                <div class="modal-top">데이터 카탈로그</div>
+                <div class="modal-body">                  
+                  <div class="flexbox gap10">
+                    <div class="modal-only-area">
+                      <input type="text" name="" class="frm-inp" id="search-text" placeholder="검색어를 입력하세요." autocomplete="off">
+                    </div>                    
+                    <div class="btn-sty sty3 sizeMl">검색</div>
+                  </div>    
+                  <div class="flexbox gap10 mt30">
+                    <div class="table-wrap assort-box">
+                      <table class="aice-table">
+                        <colgroup>
+                          <col style="width: 100%" />                          
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="flexbox start">
+                                <div class="ic-folder-open"></div>
+                                데이터 구분
+                              </div>
+                            </th>                            
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td>
+                              <div class="flexbox start">
+                                <div class="ic-tb-arrow"></div>
+                                <div class="ic-folder-close"></div>
+                                Basic 교육용
+                              </div>
+                            </td>                            
+                          </tr> 
+                          <tr>
+                            <td>
+                              <div class="flexbox start">
+                                <div class="ic-tb-arrow"></div>
+                                <div class="ic-folder-close"></div>
+                                Basic 교육용
+                              </div>
+                            </td>                            
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flexbox start">
+                                <div class="ic-tb-arrow"></div>
+                                <div class="ic-folder-close"></div>
+                                Basic 교육용
+                              </div>
+                            </td>                            
+                          </tr>                         
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-wrap">
+                      <table class="aice-table">
+                        <colgroup>
+                          <col style="width: 60px" />
+                          <col />
+                          <col style="width: 200px" />
+                          <col />
+                          <col />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>
+                              <label class="frm-chk-lb">
+                                <input type="checkbox" class="frm-chk">
+                              </label>
+                            </th>
+                            <th>포맷</th>
+                            <th>데이터명</th>                            
+                            <th>사이즈</th>
+                            <th>다운로드</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td>
+                              <label class="frm-chk-lb">
+                                <input type="checkbox" class="frm-chk">
+                              </label>
+                            </td>
+                            <td>CSV</td>
+                            <td>Global Internet Usage</td>
+                            <td>7.9 KB</td>
+                            <td>167</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="frm-chk-lb">
+                                <input type="checkbox" class="frm-chk">
+                              </label>
+                            </td>
+                            <td>CSV</td>
+                            <td>Global Internet Usage</td>
+                            <td>7.9 KB</td>
+                            <td>167</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="frm-chk-lb">
+                                <input type="checkbox" class="frm-chk">
+                              </label>
+                            </td>
+                            <td>CSV</td>
+                            <td>Global Internet Usage</td>
+                            <td>7.9 KB</td>
+                            <td>167</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="frm-chk-lb">
+                                <input type="checkbox" class="frm-chk">
+                              </label>
+                            </td>
+                            <td>CSV</td>
+                            <td>Global Internet Usage</td>
+                            <td>7.9 KB</td>
+                            <td>167</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="frm-chk-lb">
+                                <input type="checkbox" class="frm-chk">
+                              </label>
+                            </td>
+                            <td>CSV</td>
+                            <td>Global Internet Usage</td>
+                            <td>7.9 KB</td>
+                            <td>167</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>              
+                </div>
+                <div class="modal-bottom flexbox">                  
+                  <div class="btn-modal-cancle btn-sty sty5 sizeL">취소</div>
+                  <div class="btn-get btn-sty sty4 sizeL">가져오기</div>                    
+                </div>
+              </div>
+            </div>
+            <!-- //POPUP_데이터 카탈로그_확인 -->
+
+            <!-- POPUP_코드 생성_확인 -->
+            <div class="modal-container page2 show">
+              <div class="modal-create-code modal-content">
+                <div class="btn-ic-close modal-close"><img class="ic-close" alt=""></div>
+                <div class="modal-top">코드 생성</div>
+                <div class="modal-body">                  
+                  <div class="flexbox gap10">
+                    <span class="code-tit">데이터 파일</span>
+                    <div class="modal-only-area">
+                      <input type="text" name="" class="frm-inp" autocomplete="off" value="train_1.csv">
+                    </div>                    
+                    <div class="modal-only-area">
+                      <input type="text" name="" class="frm-inp" autocomplete="off" value="train_1.csv">
+                    </div>                    
+                  </div>    
+                  <div class="flexbox gap10 start">
+                    <span class="code-tit">데이터 분석</span>
+                    <div class="code-desc">분석용 컬럼을 선택해주세요.</div> 
+                  </div>                  
+                  <div class="table-wrap h200">
+                    <table class="aice-table">
+                      <colgroup>
+                        <col style="width: 100px" />
+                        <col style="width: 50px" />
+                        <col style="width: 134.29px"/>
+                        <col style="width: 134.29px"/>
+                        <col style="width: 134.29px"/>
+                        <col style="width: 134.29px"/>
+                        <col style="width: 80px" />
+                        <col style="width: 80px" />
+                        <col style="width: 134.29px"/>
+                        <col style="width: 80px" />
+                        <col style="width: 134.29px"/>
+                        <col style="width: 134.29px"/>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>레이블 컬럼</th>
+                          <th>
+                            <label class="frm-chk-lb">
+                              <input type="checkbox" class="frm-chk">
+                            </label>
+                          </th>
+                          <th>분석 컬럼</th>
+                          <th>데이터 속성</th>                            
+                          <th>걸측치 처리</th>
+                          <th>데이터/걸측치수</th>
+                          <th>최대값</th>
+                          <th>최소값</th>
+                          <th>평균</th>
+                          <th>변동계수</th>
+                          <th>분산</th>
+                          <th>표준편차</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd1">
+                            </label>
+                          </td>
+                          <td>
+                            <label class="frm-chk-lb">
+                              <input type="checkbox" class="frm-chk">
+                            </label>
+                          </td>
+                          <td>Passengerld</td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">Numeric</option>
+                            </select>
+                          </td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">삭제</option>
+                            </select>
+                          </td>
+                          <td>891/0</td>
+                          <td>891</td>
+                          <td>1</td>
+                          <td>446</td>
+                          <td>0</td>
+                          <td>66156.66667</td>
+                          <td>257.20938</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd1">
+                            </label>
+                          </td>
+                          <td>
+                            <label class="frm-chk-lb">
+                              <input type="checkbox" class="frm-chk">
+                            </label>
+                          </td>
+                          <td>Passengerld</td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">Numeric</option>
+                            </select>
+                          </td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">삭제</option>
+                            </select>
+                          </td>
+                          <td>891/0</td>
+                          <td>891</td>
+                          <td>1</td>
+                          <td>446</td>
+                          <td>0</td>
+                          <td>66156.66667</td>
+                          <td>257.20938</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd1">
+                            </label>
+                          </td>
+                          <td>
+                            <label class="frm-chk-lb">
+                              <input type="checkbox" class="frm-chk">
+                            </label>
+                          </td>
+                          <td>Passengerld</td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">Numeric</option>
+                            </select>
+                          </td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">삭제</option>
+                            </select>
+                          </td>
+                          <td>891/0</td>
+                          <td>891</td>
+                          <td>1</td>
+                          <td>446</td>
+                          <td>0</td>
+                          <td>66156.66667</td>
+                          <td>257.20938</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd1">
+                            </label>
+                          </td>
+                          <td>
+                            <label class="frm-chk-lb">
+                              <input type="checkbox" class="frm-chk">
+                            </label>
+                          </td>
+                          <td>Passengerld</td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">Numeric</option>
+                            </select>
+                          </td>
+                          <td>
+                            <select class="custom-select">
+                              <option value="">삭제</option>
+                            </select>
+                          </td>
+                          <td>891/0</td>
+                          <td>891</td>
+                          <td>1</td>
+                          <td>446</td>
+                          <td>0</td>
+                          <td>66156.66667</td>
+                          <td>257.20938</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>   
+                  <div class="data-info-wrap">
+                    <div class="md-flex-row">
+                      <div class="flex-tit">데이터 파일</div>
+                      <div class="flex-desc">train_1.csv</div>
+                    </div>
+                    <div class="md-flex-row">
+                      <div class="flex-tit">레이블 컬럼</div>
+                      <div class="flex-desc">Passengerld</div>
+                    </div>
+                    <div class="md-flex-row">
+                      <div class="flex-tit">분석용 컬럼</div>
+                      <div class="flex-desc">Passengerld,Survived,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked</div>
+                    </div>
+                    <div class="md-flex-row">
+                      <div class="flex-tit">Epochs</div>
+                      <div class="flex-desc">
+                        <div class="modal-only-area">
+                          <input type="text" name="" class="frm-inp" autocomplete="off" value="10">
+                        </div>  
+                      </div>
+                      <div class="flex-tit">Batch Size</div>
+                      <div class="flex-desc">
+                        <div class="modal-only-area">
+                          <input type="text" name="" class="frm-inp" autocomplete="off" value="50">
+                        </div>  
+                      </div>
+                      <div class="flex-tit">Learning Rate</div>
+                      <div class="flex-desc">
+                        <div class="modal-only-area">
+                          <input type="text" name="" class="frm-inp" autocomplete="off" value="0.002">
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="md-flex-row">
+                      <div class="flex-tit">데이터 분할 비율</div>
+                      <div class="flex-desc">
+                        <form class="customizing">                          
+                          <input type="range" name="points" min="0" max="100" value="70">
+                        </form>
+                        <label for="vol1">[ Train : 70% / Test : 30%]</label>                        
+                      </div>
+                    </div>
+                    <div class="md-flex-row">
+                      <div class="flex-tit">모델명</div>
+                      <div class="flex-desc"></div>
+                    </div>
+                  </div>
+                  <div class="table-wrap h250">
+                    <table class="aice-table">
+                      <colgroup>
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 300px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                        <col style="width: 94.55px" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>Passengerld</th>
+                          <th>Survived</th>
+                          <th>Pclass</th>
+                          <th>Name</th>
+                          <th>Sex</th>
+                          <th>Age</th>
+                          <th>SibSp</th>
+                          <th>Parch</th>
+                          <th>Ticket</th>
+                          <th>Fare</th>
+                          <th>Cabin</th>
+                          <th>Embarked</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>3</td>
+                          <td>“Braund, Mr.Owen Harris”</td>
+                          <td>Male</td>
+                          <td>22</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>A/5 21171</td>
+                          <td>7.25</td>
+                          <td>C85</td>
+                          <td>s</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>3</td>
+                          <td>“Braund, Mr.Owen Harris”</td>
+                          <td>Male</td>
+                          <td>22</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>A/5 21171</td>
+                          <td>7.25</td>
+                          <td>C85</td>
+                          <td>s</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>3</td>
+                          <td>“Braund, Mr.Owen Harris”</td>
+                          <td>Male</td>
+                          <td>22</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>A/5 21171</td>
+                          <td>7.25</td>
+                          <td>C85</td>
+                          <td>s</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>3</td>
+                          <td>“Braund, Mr.Owen Harris”</td>
+                          <td>Male</td>
+                          <td>22</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>A/5 21171</td>
+                          <td>7.25</td>
+                          <td>C85</td>
+                          <td>s</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>3</td>
+                          <td>“Braund, Mr.Owen Harris”</td>
+                          <td>Male</td>
+                          <td>22</td>
+                          <td>1</td>
+                          <td>0</td>
+                          <td>A/5 21171</td>
+                          <td>7.25</td>
+                          <td>C85</td>
+                          <td>s</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                                 
+                </div>
+                <div class="modal-bottom flexbox">                  
+                  <div class="btn-modal-cancle btn-sty sty5 sizeL">취소</div>
+                  <div class="btn-get btn-sty sty4 sizeL">코드 생성</div>                    
+                </div>
+              </div>
+            </div>
+            <!-- //POPUP_코드 생성_확인 -->
+
+            <!-- POPUP_실행파일 선택_확인 -->
+            <div class="modal-container page2 show">
+              <div class="modal-sel-exe modal-content">
+                <div class="btn-ic-close modal-close"><img class="ic-close" alt=""></div>
+                <div class="modal-top">실행파일 선택</div>
+                <div class="modal-body gap30">                                                                          
+                  <div class="flexbox start gap10 filepath">
+                    <span>파일경로 :</span>
+                    <div class="filename">workspace/sample/</div>
+                  </div>
+                  <div class="table-wrap">
+                    <table class="aice-table">
+                      <colgroup>
+                        <col style="width: 101px" />
+                        <col style="width: 180px" />
+                        <col style="width: 180px" />
+                        <col style="width: 200px" />
+                        <col  style="width: 180px"/>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>선택</th>
+                          <th>디렉토리/파일명</th>
+                          <th>미리보기</th>                            
+                          <th>크기</th>
+                          <th>수정일</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="frm-rd-lb">
+                              <input type="radio" class="frm-rd" name="tb-rd2">
+                            </label>
+                          </td>
+                          <td>sample_app.py</td>
+                          <td>
+                            <div class="f-center">
+                              <div class="ic-search-b"></div>
+                            </div>
+                          </td>
+                          <td>4396</td>
+                          <td>2022-10-22 10:26:33</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-bottom flexbox">                  
+                  <div class="btn-modal-cancle btn-sty sty5 sizeL">취소</div>
+                  <div class="btn-get btn-sty sty4 sizeL">가져오기</div>                    
+                </div>
+              </div>
+            </div>
+            <!-- //POPUP_실행파일 선택_확인 -->
           <!-- End -- main 태그에 퍼블작업 나머지 태그는 고정 (AIDU실습 / 마이페지이 팝업 모음) -->
         </main>
         <div data-v-07af094e="" id="footer" class="footer">
@@ -287,13 +983,10 @@
     </div>
   </div>
   <script src="../scripts/jquery-3.6.0.min.js"></script>
-  <script src="../scripts/jquery-ui.min.js"></script>
-  <script src="../scripts/swiper.min.js"></script>
+  <script src="../scripts/jquery-ui.min.js"></script>  
   <script src="../scripts/script.js"></script>
   <script>
-    $(".grid-item").on("click", function () {
-      location.href = "ready-detail.html";
-    })   
+
   </script>
 </body>
 </html>
