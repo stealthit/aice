@@ -1390,23 +1390,23 @@ $gray_txt_4:#E0DFDF; /* 추가 */
           right: 0;
           bottom: 0;
         }
-        &#catg01 img {
-          // margin-top: -59px;
-          right: 26px;          
-        }
-        &#catg02 img {
-          // margin-top: -59px;
-          right: -100px;          
-        }
-        &#catg04 img {
-          // margin-top: -59px;
-          bottom: -77px;          
-        }
+        // &#catg01 img {
+        //   // margin-top: -59px;
+        //   right: 26px;          
+        // }
+        // &#catg02 img {
+        //   // margin-top: -59px;
+        //   right: -100px;          
+        // }
+        // &#catg04 img {
+        //   // margin-top: -59px;
+        //   bottom: -77px;          
+        // }
 
-        &#catg05 img {
-          top: -118px;
-          right: -104px;
-        }      
+        // &#catg05 img {
+        //   top: -118px;
+        //   right: -104px;
+        // }      
       }
     }
 
@@ -1649,6 +1649,11 @@ $gray_txt_4:#E0DFDF; /* 추가 */
           margin-bottom: 30px;
           white-space: nowrap;
         }
+        .catg-txt2 {
+          font-size: 16px;
+          line-height: 160%;
+          margin-bottom: 20px;
+        }
       }
 
       img {
@@ -1657,27 +1662,27 @@ $gray_txt_4:#E0DFDF; /* 추가 */
         right: 0;
         bottom: 0;
       }
-      &#catg01 img {
-        // margin-top: -59px;
-        right: 26px;          
-      }
-      &#catg02 img {
-        // margin-top: -59px;
-        right: -100px;          
-      }
-      &#catg04 img {
-        // margin-top: -59px;
-        bottom: -77px;          
-      }
+      // &#catg01 img {
+      //   // margin-top: -59px;
+      //   right: 26px;          
+      // }
+      // &#catg02 img {
+      //   // margin-top: -59px;
+      //   right: -100px;          
+      // }
+      // &#catg04 img {
+      //   // margin-top: -59px;
+      //   bottom: -77px;          
+      // }
 
-      &#catg05 img {
-        top: -118px;
-        right: -104px;
-      }
+      // &#catg05 img {
+      //   top: -118px;
+      //   right: -104px;
+      // }
 
-      &#catg06 img {          
-        bottom: 35px;
-      }
+      // &#catg06 img {          
+      //   bottom: 35px;
+      // }
     }
   }
 

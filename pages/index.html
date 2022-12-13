@@ -12,6 +12,13 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 />
+  <style>
+    /* intro banner 사용자정의 수정 */
+    /* banner 배경색상 */
+    .catg-cont-wrap {background: #fff !important;}
+    /* banner font color */
+    .catg-desc {color: navy !important;}
+  </style>
 </head>
 <body>  
   <div data-app="true" class="v-application v-application--is-ltr theme--light" id="app">
@@ -113,13 +120,13 @@
                         <div class="catg-content active" id="catg01">
                           <div class="catg-desc">
                             <div class="catg-title">AICE Ready</div>
-                            <div class="catg-txt1">AICE 자격인증 시험준비에 꼭 필요한 <br>
+                            <div class="catg-txt1">AICE 시험준비에 꼭 필요한 <br>
                               핵심내용만 담았습니다!</div>
-                            <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
-                              AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+                            <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
+                              전반적인 AI개발 Flow를 이해하고 적용할 수 있게 구성했습니다.</div>
                             <button class="btn-more">더보기</button>
                           </div>
-                          <img src="../images/intro1.png" alt="">
+                          <img src="../images/intro1.png" alt="" style="right: 26px;">
                         </div>
                       </div>
                     </div>
@@ -128,14 +135,14 @@
                         <div class="catg-content" id="catg02">
                           <div class="catg-desc">
                             <div class="catg-title">AI 사례실습</div>
-                            <div class="catg-txt1">AICE 자격인증 시험준비에 꼭 필요한 <br>
-                              인공지능(AI) 교육의 전문화를 위한 도전은 <br>
-                              사례를 통해 실습위주의 공부를 할 수 있습니다.
+                            <div class="catg-txt1">현실의 문제를 AI로 해결할 수 있도록 <br>
+                              실사례 기반 교육을 체험해 보세요.
                             </div>    
-                            <!-- <div class="catg-txt2"></div>           -->
+                            <div class="catg-txt2">기업, 사회 등의 실제 사례 기반 AI 프로젝트를 <br> 
+                              따라해 보며 현실의 이슈를 해결하고 체험합니다.</div>          
                             <button class="btn-more">더보기</button>
                           </div>
-                          <img src="../images/intro2.png" alt="">
+                          <img src="../images/intro2.png" alt="" style="right: -100px;">
                         </div>
                       </div>
                     </div>
@@ -143,13 +150,13 @@
                       <div class="catg-cont-wrap">
                         <div class="catg-content" id="catg03">
                           <div class="catg-desc">
-                            <div class="catg-title">Data Science</div>
-                            <div class="catg-txt1">다양한 데이터로부터 지식과 인사이트를 추출하는데<br>
-                              필요한 융합분야를 배웁니다.</div>
-                            <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
-                              AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+                            <div class="catg-title">AI 기본이론</div>
+                            <div class="catg-txt1">AI 기본기를 업그레이드 할 강좌들을 <br>
+                              선별하여  담았습니다.</div>
+                            <div class="catg-txt2">Python기본, 웹크롤링, 데이터사이언스 등 <br>
+                              기본 AI 코딩과  데이터 분석 강좌를 수강할 수 있습니다.</div>
                             <button class="btn-more">더보기</button>
-                          </div>
+                          </div>                          
                           <img src="../images/intro3.png" alt="">
                         </div>
                       </div>
@@ -158,32 +165,31 @@
                       <div class="catg-cont-wrap">
                         <div class="catg-content" id="catg04">
                           <div class="catg-desc">
-                            <div class="catg-title">AI Insight</div>
-                            <div class="catg-txt1">인공지능과 우리가 협업하고 공존하는 사회를 준비하는<br>
-                              모든 수업이 있습니다.</div>
-                            <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로<br> 
-                              AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+                            <div class="catg-title">AI/DX Story</div>
+                            <div class="catg-txt1">AI가 처음 이신가요? <br>
+                              다양한 AI/DX 이야기를 접해보세요.</div>
+                            <div class="catg-txt2">AI에 대한 이해도를 증진 시키고 싶은 분들을 위해 <br>
+                              AI 전문가들의 Insight, AI개발자 Story, AI 기술 등 <br>
+                              생생한 AI 지식을 제공해 드립니다. </div>
                             <button class="btn-more">더보기</button>
                           </div>
-                          <img src="../images/intro4.png" alt="">
+                          <img src="../images/intro4.png" alt="" style="bottom: -77px;">
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide swiperIntro-slide">
+                    <!-- <div class="swiper-slide swiperIntro-slide">
                       <div class="catg-cont-wrap">
                         <div class="catg-content" id="catg05">
                           <div class="catg-desc">
                             <div class="catg-title">AI VOD교육팩</div>
                             <div class="catg-txt1">인공지능과 친해질 수 있는 과목을 하나의 패키지로<br>
-                              수강할 수 있습니다.</div>
-                            <!-- <div class="catg-txt2">실제 AI를 활용하는데 필요한 핵심역량을 중심으로 <br>
-                              AI 개발 Flow를 이해하고 적용할 수 있게 구성된 교육과정입니다.</div> -->
+                              수강할 수 있습니다.</div>                            
                             <button class="btn-more">더보기</button>
                           </div>
-                          <img src="../images/intro5.png" alt="">
+                          <img src="../images/intro5.png" alt="" style="top: -118px;right: -104px;">
                         </div>
                       </div>
-                    </div>                    
+                    </div>                     -->
                   </div>                  
                   <!-- 페이징 -->
                   <div class="paging_wrap catg-menu-wrap">                                            
@@ -304,7 +310,7 @@
               <div class="main-content">
                 <div class="section1 section">
                   <div class="section-top">
-                    <div class="section-title">이달의 베스트 강의 TOP 10 </div>
+                    <div class="section-title">추천 강좌</div>
                     <div class="arrow-group">
                       <div class="swiper-button-prev swiper-button-prev1"></div><!-- 이전 버튼 -->       
                       <div class="swiper-button-next swiper-button-next1"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
@@ -367,7 +373,7 @@
                   <div class="banner-wrap">
                     <div class="banner-txt">
                       <div class="banner-title">AI 활용 핵심을 짚어주는 교육, AICE Ready</div>
-                      <div class="banner-desc">기존 수강생들의 학습 데이터를 기반으로 가장 효과적인 AI 학습가이드를 제안합니다</div>
+                      <div class="banner-desc">AI를 직접 해 보는 과정을 통해 가장 효과적인 AI학습가이드를 제안합니다.</div>
                       <div class="banner-shortcut">바로가기<img src="../images/shortcut_arrow.png" alt=""></div>
                     </div>
                     <img src="../images/banner.png" alt="">
@@ -530,7 +536,7 @@
                   </div>
                   <div class="section-content">
                     <div class="section-top">
-                      <div class="section-title">Data Science <div class="ic-more"></div></div>
+                      <div class="section-title">AI기본이론 <div class="ic-more"></div></div>
                       <div class="arrow-group">
                         <div class="swiper-button-prev swiper-button-prev4"></div><!-- 이전 버튼 -->       
                         <div class="swiper-button-next swiper-button-next4"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
@@ -607,7 +613,7 @@
                   </div>
                   <div class="section-content">
                     <div class="section-top">
-                      <div class="section-title">AI Insight <div class="ic-more"></div></div>
+                      <div class="section-title">AI/DX Story <div class="ic-more"></div></div>
                       <div class="arrow-group">
                         <div class="swiper-button-prev swiper-button-prev5"></div><!-- 이전 버튼 -->       
                         <div class="swiper-button-next swiper-button-next5"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
@@ -698,12 +704,12 @@
                       </div>            
                     </div>
                   </div>
-                  <div class="section-content">
+                  <!-- <div class="section-content">
                     <div class="section-top">
                       <div class="section-title">AI VOD교육팩 <div class="ic-more"></div></div>
                       <div class="arrow-group">
-                        <div class="swiper-button-prev swiper-button-prev6"></div><!-- 이전 버튼 -->       
-                        <div class="swiper-button-next swiper-button-next6"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                        <div class="swiper-button-prev swiper-button-prev6"></div>
+                        <div class="swiper-button-next swiper-button-next6"></div>
                       </div>
                     </div>                                             
                     <div class="swiper mySwiper6">
@@ -711,12 +717,7 @@
                         <div class="swiper-slide">
                           <div class="img-box"><img src='../images/img_vod1.png'></div>
                           <div class="desc-box">
-                            <div class="grid-title">교육청 AI 교육과정</div>
-                            <!-- <ul class="count-line">
-                              <li><img class="ic-person" alt="">300</li>
-                              <li><img class="ic-heart" alt="">598</li>
-                              <li><img class="ic-comment" alt="">202</li>
-                            </ul> -->
+                            <div class="grid-title">교육청 AI 교육과정</div>                            
                             <ul class="type-wrap">
                               <li class="btn-type bg-green">Basic</li>
                               <li class="btn-type type2">No 코딩</li>                                
@@ -727,12 +728,7 @@
                         <div class="swiper-slide">
                           <div class="img-box"><img src='../images/img_vod2.png'></div>
                           <div class="desc-box">
-                            <div class="grid-title">교육청 AI 교육과정</div>
-                            <!-- <ul class="count-line">
-                              <li><img class="ic-person" alt="">3030</li>
-                              <li><img class="ic-heart" alt="">598</li>
-                              <li><img class="ic-comment" alt="">202</li>
-                            </ul> -->
+                            <div class="grid-title">교육청 AI 교육과정</div>                            
                             <ul class="type-wrap">
                               <li class="btn-type bg-yel">Future</li>
                               <li class="btn-type type2">No 코딩</li>                                    
@@ -743,12 +739,7 @@
                         <div class="swiper-slide">
                           <div class="img-box"><img src='../images/img_vod3.png'></div>
                           <div class="desc-box">
-                            <div class="grid-title">교육청 AI 교육과정</div>
-                            <!-- <ul class="count-line">
-                              <li><img class="ic-person" alt="">3030</li>
-                              <li><img class="ic-heart" alt="">598</li>
-                              <li><img class="ic-comment" alt="">202</li>
-                            </ul> -->
+                            <div class="grid-title">교육청 AI 교육과정</div>                            
                             <ul class="type-wrap">
                               <li class="btn-type bg-purple">Professional</li>
                               <li class="btn-type type2">Python</li>       
@@ -759,12 +750,7 @@
                         <div class="swiper-slide">
                           <div class="img-box"><img src='../images/img_vod4.png'></div>
                           <div class="desc-box">
-                            <div class="grid-title">교육청 AI 교육과정</div>
-                            <!-- <ul class="count-line">
-                              <li><img class="ic-person" alt="">300</li>
-                              <li><img class="ic-heart" alt="">598</li>
-                              <li><img class="ic-comment" alt="">202</li>
-                            </ul> -->
+                            <div class="grid-title">교육청 AI 교육과정</div>                           
                             <ul class="type-wrap">
                               <li class="btn-type bg-blue">Associate</li>
                               <li class="btn-type type2">Python</li>
@@ -774,7 +760,7 @@
                         </div>                        
                       </div>            
                     </div>
-                  </div>
+                  </div> -->
                 </div>              
               </div>
             </div>
@@ -869,7 +855,8 @@
         spaceBetween: 50,        
       });  
 
-      var menu = ['AICE Ready', 'AI 사례 실습', 'Data Science','AI Insight]','AI VOD 교육팩'];
+      // var menu = ['AICE Ready', 'AI 사례 실습', 'Data Science','AI Insight]','AI VOD 교육팩'];
+      var menu = ['AICE Ready', 'AI 사례 실습', 'AI기본이론','AI/DX Story'];
       var swiperIntro = new Swiper(".mySwiperIntro", {        
         centeredSlides: true,
         autoplay: {
