@@ -1327,11 +1327,11 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 // main 
 .main {
   .intro {
-    .catg-cont-wrap {
+    .catg-cont-wrap {      
       background: #003594;
       width: 100%;
 
-      .catg-content {
+      .catg-content {        
         position: relative;
         overflow: hidden;
         height: 700px;
@@ -1464,6 +1464,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     .banner-wrap {
       margin: 0 auto;
       width: $main-width;
+      height: 100%;
       display: flex;
       justify-content: space-between;
   
@@ -1868,6 +1869,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     gap: 30px;
 
     .thumb-desc {
+      flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
