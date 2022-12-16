@@ -257,8 +257,9 @@
                       <li>업무혁신</li>
                       <li>고객편의 개선</li>
                       <li>서비스개발/적용</li>
-                    </ul>                     
-                    <div class="smenu-content section">
+                    </ul>            
+                    <!-- no-data 추가로 인해 on 클래스 추가 (no-data 인경우 on 클래스 제거)-->
+                    <div class="smenu-content section on">
                       <div class="section-top">
                         <div class="section-title"></div>
                         <div class="arrow-group">
@@ -314,7 +315,12 @@
                           </div>                        
                         </div>            
                       </div>
-                    </div>                                              
+                    </div>              
+                    <!-- no-data 추가 (no-data 사용시 on 클래스 추가) -->
+                    <div class="no-data">
+                      <div class="ic-error"></div>
+                      데이타가 없습니다.
+                    </div>
                   </div>                                      
                 </div>
               </div>
