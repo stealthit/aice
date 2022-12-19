@@ -459,7 +459,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 13.33px;
 }
 
 .wrapper .search-wrap .search-result .result-list .grid-box .grid-item {
@@ -524,9 +524,13 @@
 }
 
 .wrapper .thumnbnail .img-box {
-  width: 315px;
-  height: 315px;
+  width: 340px;
+  height: 208px;
   overflow: hidden;
+}
+
+.wrapper .thumnbnail .img-box img {
+  width: 100%;
 }
 
 .wrapper .thumnbnail .desc-box > .grid-title {
@@ -1697,19 +1701,23 @@
   overflow: hidden;
 }
 
-.section.section1 .img-box {
+.section .img-box img {
+  width: 100%;
+}
+
+.section.section1 .swiper-slide:nth-child(2n+1) .img-box {
   width: 420px;
   height: 460px;
 }
 
-.section:not(.section1) .swiper-slide:nth-child(2n+1) .img-box {
-  width: 315px;
-  height: 315px;
+.section.section1 .swiper-slide:nth-child(2n) .img-box {
+  width: 420px;
+  height: 300px;
 }
 
-.section:not(.section1) .swiper-slide:nth-child(2n) .img-box {
-  width: 315px;
-  height: 200px;
+.section:not(.section1) .img-box {
+  width: 340px;
+  height: 208px;
 }
 
 .section .desc-box > .grid-title {
@@ -2339,6 +2347,10 @@
 .detail-page .detail-content-wrap .detail-content#d-mn01 .detail-instructor .img-box {
   width: 500px;
   height: 400px;
+}
+
+.detail-page .detail-content-wrap .detail-content#d-mn01 .detail-instructor .img-box img {
+  width: 100%;
 }
 
 .detail-page .detail-content-wrap .detail-content#d-mn01 .detail-instructor .instructor-desc {
@@ -3013,7 +3025,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 245px;
-  height: 412px;
+  height: 315px;
   margin-top: 66px;
   margin-right: 30px;
 }
