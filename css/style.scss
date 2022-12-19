@@ -1898,6 +1898,11 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     display: flex;
     gap: 30px;
 
+    .thumb-box {
+      width: 505px;
+      height: 312px;
+      & > img {width: 100%;}
+    }
     .thumb-desc {
       flex: 1;
       display: flex;
