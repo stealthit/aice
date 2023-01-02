@@ -1781,6 +1781,7 @@
 
 .section .swiper-button-prev,
 .section .swiper-button-next {
+  background-image: none;
   position: initial;
   width: 32px;
   height: 32px;
