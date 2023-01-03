@@ -525,7 +525,10 @@
 
 .wrapper .thumnbnail .img-box {
   width: 340px;
-  height: 208px;
+  height: 340px;
+}
+
+.wrapper .thumnbnail .img-box {
   overflow: hidden;
 }
 
@@ -1720,6 +1723,10 @@
   height: 208px;
 }
 
+.section.smenu-content .img-box {
+  height: 340px !important;
+}
+
 .section .desc-box > .grid-title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -2232,7 +2239,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
+  width: 150px;
+  height: 40px;
+  background: #F3F3F3;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
 }
 
 .detail-page .project-container .grid-content {
@@ -2396,6 +2414,7 @@
 }
 
 .detail-page .detail-content-wrap .detail-content#d-mn02 {
+  padding: 0;
   padding-bottom: 0;
 }
 

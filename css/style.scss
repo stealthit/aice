@@ -496,7 +496,18 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 
     .img-box {
       width: 340px;
-      height: 208px;
+      height: 340px;
+    }
+    // .grid-item:nth-child(2n+1) .img-box {
+    //   width: 340px;
+    //   height: 340px;
+    // }
+    // .grid-item:nth-child(2n) .img-box{
+    //   width: 340px;
+    //   height: 208px;
+    // }
+
+    .img-box {    
       overflow: hidden;
 
       img {width: 100%;}
@@ -1574,6 +1585,9 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       height: 208px;
     }
   }
+  &.smenu-content .img-box {    
+    height: 340px !important;
+  }
 
   .desc-box {
     &>.grid-title {
@@ -2032,7 +2046,17 @@ $gray_txt_4:#E0DFDF; /* 추가 */
 
       .project-button {
         display: flex;
+        justify-content: center;
         gap: 30px;
+        width: 150px;
+        height: 40px;
+
+        background: #F3F3F3;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #464646;
       }
     }
 
@@ -2171,6 +2195,7 @@ $gray_txt_4:#E0DFDF; /* 추가 */
       }
 
       &#d-mn02 {
+        padding: 0;
         padding-bottom: 0;
         details {
           width: 100%;
