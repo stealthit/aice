@@ -1546,33 +1546,33 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     img {width: 100%;}
     overflow: hidden;
   }
-  // &.section1 .img-box {
-  //   width: 420px;
-  //   height: 460px;
-  // }
-  &.section1 {
-    .swiper-slide:nth-child(2n+1) .img-box {
-      width: 420px;
-      height: 460px;
-    }
-    .swiper-slide:nth-child(2n) .img-box{
-      width: 420px;
-      height: 300px;
-    }
+  &.section1 .img-box {
+    width: 420px;
+    height: 460px;
   }
+  // &.section1 {
+  //   .swiper-slide:nth-child(2n+1) .img-box {
+  //     width: 420px;
+  //     height: 460px;
+  //   }
+  //   .swiper-slide:nth-child(2n) .img-box{
+  //     width: 420px;
+  //     height: 300px;
+  //   }
+  // }
   &:not(.section1) {
-    .img-box {
-      width: 340px;
-      height: 208px;
-    }
-    // .swiper-slide:nth-child(2n+1) .img-box {
+    // .img-box {
     //   width: 340px;
     //   height: 208px;
     // }
-    // .swiper-slide:nth-child(2n) .img-box{
-    //   width: 315px;
-    //   height: 200px;
-    // }
+    .swiper-slide:nth-child(2n+1) .img-box {
+      width: 340px;
+      height: 340px;
+    }
+    .swiper-slide:nth-child(2n) .img-box{
+      width: 340px;
+      height: 208px;
+    }
   }
 
   .desc-box {

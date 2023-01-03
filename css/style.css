@@ -1705,17 +1705,17 @@
   width: 100%;
 }
 
-.section.section1 .swiper-slide:nth-child(2n+1) .img-box {
+.section.section1 .img-box {
   width: 420px;
   height: 460px;
 }
 
-.section.section1 .swiper-slide:nth-child(2n) .img-box {
-  width: 420px;
-  height: 300px;
+.section:not(.section1) .swiper-slide:nth-child(2n+1) .img-box {
+  width: 340px;
+  height: 340px;
 }
 
-.section:not(.section1) .img-box {
+.section:not(.section1) .swiper-slide:nth-child(2n) .img-box {
   width: 340px;
   height: 208px;
 }
