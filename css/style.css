@@ -525,7 +525,7 @@
 
 .wrapper .thumnbnail .img-box {
   width: 340px;
-  height: 340px;
+  height: 208px;
 }
 
 .wrapper .thumnbnail .img-box {
@@ -1724,7 +1724,7 @@
 }
 
 .section.smenu-content .img-box {
-  height: 340px !important;
+  height: 208px !important;
 }
 
 .section .desc-box > .grid-title {
