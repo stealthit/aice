@@ -1518,6 +1518,10 @@ $gray_txt_4:#E0DFDF; /* 추가 */
     .section-content {
       margin-bottom: 40px;
     }
+    // 2023.01.05
+    .swiper-slide:nth-child(2n+1) .img-box{
+      height:208px !important;
+    }
   }
 }
 .section {
